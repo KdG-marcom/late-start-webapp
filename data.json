@@ -1,0 +1,3429 @@
+{
+ "updated": "2026-11-19T08:31:27.728Z",
+ "opleidingen": [
+  {
+   "id": "rec758eaCgPWDTmQd",
+   "naam": "Accountancy-Fiscaliteit",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/accountancy-fiscaliteit",
+   "themas": [
+    "Recht, financiën & accountancy"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Igor Van Loock"
+   ],
+   "mail": "afi.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recGyiDrahaZ8JSOg",
+   "naam": "AI & Data Engineer",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/artificiele-intelligentie",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Anne-Charlotte Peeters",
+    "Aurelie Van Reeth"
+   ],
+   "mail": "ti.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec126wKVHpGwSjlG",
+   "naam": "Applied Computer Science",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/applied-computer-science",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Aurelie Van Reeth",
+    "Anne-Charlotte Peeters"
+   ],
+   "mail": "acs.scc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec3ho2bGcqpcyjS3",
+   "naam": "Autotechnologie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/autotechnologie",
+   "themas": [
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Ellen Lesage"
+   ],
+   "mail": "ellen.lesage@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec02MNWBVfzerROT",
+   "naam": "Basisverpleegkunde",
+   "type": "Graduaat",
+   "url": "https://www.kdg.be/opleidingen/graduaat/basisverpleegkunde",
+   "themas": [
+    "Gezondheid & zorg"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [],
+   "slc": [],
+   "mail": "",
+   "lijst": true
+  },
+  {
+   "id": "recIgCGs8TeF1cBp7",
+   "naam": "Bedrijfsmanagement",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/bedrijfsmanagement",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [],
+   "mail": "",
+   "lijst": true
+  },
+  {
+   "id": "recEOINnfUxsJw2dg",
+   "naam": "Beeldende Kunsten",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/academische-bachelor-beeldende-kunsten",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recBA2ode0A2142P1",
+   "naam": "Biochemie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/biochemie",
+   "themas": [
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Carl Oomens"
+   ],
+   "mail": "carl.oomens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recHEsf3oD2xyN5a0",
+   "naam": "Biomedische Laboratoriumtechnologie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/biomedische-laboratoriumtechnologie",
+   "themas": [
+    "Gezondheid & zorg",
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Carl Oomens"
+   ],
+   "mail": "carl.oomens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recEZ4FrTpV0mg5QC",
+   "naam": "Business & Languages",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/business-languages",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Hanka Robbrecht"
+   ],
+   "mail": "om.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "reczJFHeiT61MUXUx",
+   "naam": "Chemie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/chemie",
+   "themas": [
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Carl Oomens"
+   ],
+   "mail": "carl.oomens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec1vjnpb79XliuCu",
+   "naam": "Cross Media Management",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/bachelor-cross-media-management",
+   "themas": [
+    "Business & management",
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Hanka Robbrecht"
+   ],
+   "mail": "om.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec1nW89sRa1sik1t",
+   "naam": "Cybersecurity Specialist",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/toegepaste-informatica/cybersecurity-specialist",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Anne-Charlotte Peeters",
+    "Aurelie Van Reeth"
+   ],
+   "mail": "ti.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec6TkLCvF8lj4Mu6",
+   "naam": "Educatief Graduaat Secundair Onderwijs",
+   "type": "Graduaat",
+   "url": "https://www.kdg.be/educatief-graduaat-leraar-secundair-onderwijs",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Stefanie Baeten",
+    "Katleen Van Calsteren"
+   ],
+   "mail": "slc.egso@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec5lFp8BZleBR6N3",
+   "naam": "Event & Project Management",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/bachelor-event-projectmanagement",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Hanka Robbrecht"
+   ],
+   "mail": "om.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recZOC0DbFA1QNVk4",
+   "naam": "Farmaceutische en Biologische Laboratoriumtechnologie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/farmaceutische-biologische-laboratoriumtechnologie",
+   "themas": [
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Carl Oomens"
+   ],
+   "mail": "carl.oomens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec9CObonY4QxCSAi",
+   "naam": "Financiën en Verzekeringen",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/financie-en-verzekeringswezen",
+   "themas": [
+    "Recht, financiën & accountancy"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Josien Jacobs"
+   ],
+   "mail": "josien.jacobs@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec0cBw9Awp7Swp8z",
+   "naam": "Fotografie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/fotografie",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec6nXEmDwhF0g1IW",
+   "naam": "Global Business",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/global-business",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Vanessa Naegels",
+    "Eef Hast",
+    "Carole Saenen",
+    "Ann Sophie Liekens"
+   ],
+   "mail": "ibm.scc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recGVhdyVoBEj45db",
+   "naam": "Global Supply Chain Management",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/global-supply-chain-management",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Vanessa Naegels",
+    "Eef Hast",
+    "Carole Saenen",
+    "Ann Sophie Liekens"
+   ],
+   "mail": "ibm.scc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recEqa2c4DMvVMqzs",
+   "naam": "Grafisch Ontwerp",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/grafisch-ontwerp",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recbfXI6mc1WawDUT",
+   "naam": "Human Resources Management",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/human-resources-management",
+   "themas": [
+    "Business & management",
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Griet Van der Velden"
+   ],
+   "mail": "griet.vandervelden@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recZmdvrTJFlV8U4N",
+   "naam": "Infrastructure Engineer",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/systeem-en-netwerkbeheer",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Anne-Charlotte Peeters",
+    "Aurelie Van Reeth"
+   ],
+   "mail": "ti.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recC8obFXaHRGYJ6I",
+   "naam": "Internationaal Ondernemen",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/internationaal-ondernemen",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Igor Van Loock"
+   ],
+   "mail": "igor.vanloock@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec5zZ682qZ5Yvceg",
+   "naam": "International Business Management",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/international-business-management",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Vanessa Naegels",
+    "Eef Hast",
+    "Carole Saenen",
+    "Ann Sophie Liekens"
+   ],
+   "mail": "ibm.scc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recwNjC4C2a938Mx9",
+   "naam": "International Entrepreneurship",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/international-entrepreneurship",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Vanessa Naegels",
+    "Eef Hast",
+    "Carole Saenen",
+    "Ann Sophie Liekens"
+   ],
+   "mail": "ibm.scc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recsT7ZNv34bqwxvN",
+   "naam": "Internet of Things",
+   "type": "Graduaat",
+   "url": "https://www.kdg.be/internet-of-things",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Liesje Tops"
+   ],
+   "mail": "liesje.tops@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recFYOSRn9ShB0lsO",
+   "naam": "Juweelontwerp en Edelsmeedkunst",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/juweelontwerp-edelsmeedkunst",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "reckwL0ao20weSR96",
+   "naam": "KMO-Management",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/kmo-management",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Igor Van Loock"
+   ],
+   "mail": "igor.vanloock@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recZqiDnegXT78PH3",
+   "naam": "Kunst- en Cultuurbemiddeling",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/kunst-en-cultuurbemiddeling",
+   "themas": [
+    "Mens, gedrag & maatschappij",
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mieke Wouters"
+   ],
+   "mail": "mieke.wouters@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recblqFA3JRAckhPT",
+   "naam": "Leraar Kleuteronderwijs",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/leraar-kleuteronderwijs",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Kathleen Soufnanguel"
+   ],
+   "mail": "kathleen.soufnanguel@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec0BgN1ylZo01Td8",
+   "naam": "Leraar Lager Onderwijs",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/leraar-lager-onderwijs",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Belinda Wyckmans"
+   ],
+   "mail": "belinda.wyckmans@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recImuqf5wD9d1imD",
+   "naam": "Leraar Secundair Onderwijs",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/leraar-secundair-onderwijs",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Siene Van Hoorick"
+   ],
+   "mail": "siene.vanhoorick@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recykThbbNNBizUGH",
+   "naam": "Maatschappelijk Werk",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/maatschappelijk-werk",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mieke Wouters"
+   ],
+   "mail": "mieke.wouters@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recirpV14wwT0PkaH",
+   "naam": "Maatschappelijk Werk",
+   "type": "Graduaat",
+   "url": "https://www.kdg.be/maatschappelijk-werk-graduaat",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [],
+   "slc": [
+    "Fauzia Elhajouti"
+   ],
+   "mail": "fauzia.elhajouti@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recmYo7wyOmi3q2Re",
+   "naam": "Maatschappelijke Advisering",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/maatschappelijke-advisering",
+   "themas": [
+    "Mens, gedrag & maatschappij",
+    "Recht, financiën & accountancy"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mieke Wouters"
+   ],
+   "mail": "mieke.wouters@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recpcD964rdzuOPgm",
+   "naam": "Marketing",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/marketing",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Céline De Schoesitter"
+   ],
+   "mail": "mar.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recT2920lKQ9BkTVO",
+   "naam": "Medische Beeldvorming en Radiotherapie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/medische-beeldvorming-en-radiotherapie",
+   "themas": [
+    "Gezondheid & zorg",
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Sophie Verfaillie"
+   ],
+   "mail": "sophie.verfaillie@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec0R85w2ufnj6IOf",
+   "naam": "Medische Laboratoriumtechnologie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/medische-laboratoriumtechnologie",
+   "themas": [
+    "Gezondheid & zorg",
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Carl Oomens"
+   ],
+   "mail": "carl.oomens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec1JeEaj1p3sHmz8",
+   "naam": "Multimedia en Creatieve Technologie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/multimedia-creative-technologies",
+   "themas": [
+    "Informatica",
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Liesje Tops"
+   ],
+   "mail": "liesje.tops@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recWKACPuoy4PiCU2",
+   "naam": "Nursing",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/nursing",
+   "themas": [
+    "Gezondheid & zorg"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mark Willekens"
+   ],
+   "mail": "mark.willekens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec20YAygTT2QBTwJ",
+   "naam": "Organisatie en Management",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/bachelor-organisatie-en-management",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Hanka Robbrecht"
+   ],
+   "mail": "om.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recpzcxhfkg6gkf5p",
+   "naam": "Orthopedagogie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/orthopedagogie",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "maart",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Ingrid Van Peteghem"
+   ],
+   "mail": "ingrid.vanpeteghem@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recijnUMoZRV5hvJC",
+   "naam": "Pedagogie van het Jonge Kind",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/pedagogie-van-het-jonge-kind",
+   "themas": [
+    "Mens, gedrag & maatschappij",
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Debby Deruyter"
+   ],
+   "mail": "debby.deruyter@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recP2wtaLRwaHo8Eh",
+   "naam": "Physical AI Specialist",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/toegepaste-informatica/physical-ai-specialist",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Anne-Charlotte Peeters",
+    "Aurelie Van Reeth"
+   ],
+   "mail": "ti.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recVBCB7HTWqw6jDF",
+   "naam": "Procestechnologie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/procestechnologie",
+   "themas": [
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Carl Oomens"
+   ],
+   "mail": "carl.oomens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recTNnVICTJhbPbww",
+   "naam": "Product Owner",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/softwaremanagement",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Anne-Charlotte Peeters",
+    "Aurelie Van Reeth"
+   ],
+   "mail": "ti.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recWHgWp5bhxwOsUz",
+   "naam": "Rechtspraktijk",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/rechtspraktijk",
+   "themas": [
+    "Recht, financiën & accountancy"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Filip Aerts"
+   ],
+   "mail": "filip.aerts@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recpKemge6v1IX5Ru",
+   "naam": "Sociaal Werk",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/sociaal-werk",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mieke Wouters"
+   ],
+   "mail": "mieke.wouters@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recC9f3xAZoK9EOSL",
+   "naam": "Sociaal-Cultureel Werk",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/sociaal-cultureel-werk",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mieke Wouters"
+   ],
+   "mail": "mieke.wouters@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec6JPMQNDPQMVYMP",
+   "naam": "Sociaal-Juridische Dienstverlening",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/sociaal-juridische-dienstverlening",
+   "themas": [
+    "Mens, gedrag & maatschappij",
+    "Recht, financiën & accountancy"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mieke Wouters"
+   ],
+   "mail": "mieke.wouters@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recRzav49h2398I0H",
+   "naam": "Software Engineer",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/applicatieontwikkeling",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Anne-Charlotte Peeters",
+    "Aurelie Van Reeth"
+   ],
+   "mail": "ti.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recZbKaTB5iVmHmGr",
+   "naam": "Supply Chain Management",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/supply-chain-management",
+   "themas": [
+    "Business & management"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Jesse Mortelmans"
+   ],
+   "mail": "jesse.mortelmans@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec0uqqxjbxtCv0Jn",
+   "naam": "Toegepaste Informatica",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/toegepaste-informatica",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Anne-Charlotte Peeters",
+    "Aurelie Van Reeth"
+   ],
+   "mail": "ti.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recIjctpDVPPXjOZo",
+   "naam": "Toegepaste Jeugdcriminologie",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/toegepaste-jeugdcriminologie",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "maart",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Ingrid Van Peteghem"
+   ],
+   "mail": "ingrid.vanpeteghem@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recqu0nqqO5WbLbdy",
+   "naam": "Verpleegkunde",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/verpleegkunde",
+   "themas": [
+    "Gezondheid & zorg"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Stijn Van Doninck"
+   ],
+   "mail": "stijn.vandoninck@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recdKl40cbdSFi0s7",
+   "naam": "Verpleegkunde - Brugprogramma",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/verpleegkunde-brugprogramma",
+   "themas": [
+    "Gezondheid & zorg"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mark Willekens"
+   ],
+   "mail": "mark.willekens@kdg.be",
+   "lijst": false
+  },
+  {
+   "id": "recl4RtRhC3QBZmTg",
+   "naam": "Voertuigtechnieken",
+   "type": "Graduaat",
+   "url": "https://www.kdg.be/voertuigtechnieken",
+   "themas": [
+    "Wetenschappen & technologie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [],
+   "slc": [
+    "Ellen Lesage"
+   ],
+   "mail": "ellen.lesage@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recLtyRTKlo6T1894",
+   "naam": "Vrije Kunsten",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/vrije-kunsten",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recXY72kvcmkDBP1g",
+   "naam": "Vroedkunde",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/vroedkunde",
+   "themas": [
+    "Gezondheid & zorg"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "november",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Laura Claes"
+   ],
+   "mail": "laura.claes@kdg.be",
+   "lijst": true
+  }
+ ],
+ "vooropleidingen": [
+  {
+   "naam": "Bachelor in de agro- en biotechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recBA2ode0A2142P1",
+    "reczJFHeiT61MUXUx",
+    "recHEsf3oD2xyN5a0"
+   ]
+  },
+  {
+   "naam": "Bachelor in de agro- en biotechnologie – afstudeerrichting biotechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recBA2ode0A2142P1",
+    "recHEsf3oD2xyN5a0"
+   ]
+  },
+  {
+   "naam": "Bachelor in de agro- en biotechnologie – afstudeerrichting voedingstechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recBA2ode0A2142P1",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor in de audiovisuele kunsten",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec0cBw9Awp7Swp8z",
+    "rec1JeEaj1p3sHmz8"
+   ]
+  },
+  {
+   "naam": "Bachelor in de audiovisuele technieken: film, TV en video",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec1JeEaj1p3sHmz8",
+    "rec0cBw9Awp7Swp8z"
+   ]
+  },
+  {
+   "naam": "Bachelor in de autotechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec3ho2bGcqpcyjS3",
+    "recl4RtRhC3QBZmTg"
+   ]
+  },
+  {
+   "naam": "Bachelor in de biomedische laboratoriumtechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recHEsf3oD2xyN5a0",
+    "reczJFHeiT61MUXUx",
+    "recBA2ode0A2142P1"
+   ]
+  },
+  {
+   "naam": "Bachelor in de biomedische laboratoriumtechnologie – afstudeerrichting farmaceutische en biologische laboratoriumtechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recZOC0DbFA1QNVk4"
+   ]
+  },
+  {
+   "naam": "Bachelor in de biomedische laboratoriumtechnologie – afstudeerrichting medische laboratoriumtechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec0R85w2ufnj6IOf"
+   ]
+  },
+  {
+   "naam": "Bachelor in de bouw",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de built environment",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de chemie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx",
+    "recBA2ode0A2142P1",
+    "recVBCB7HTWqw6jDF",
+    "recHEsf3oD2xyN5a0"
+   ]
+  },
+  {
+   "naam": "Bachelor in de chemie – afstudeerrichting biochemie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recBA2ode0A2142P1"
+   ]
+  },
+  {
+   "naam": "Bachelor in de chemie – afstudeerrichting chemie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor in de chemie – afstudeerrichting milieutechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx",
+    "recVBCB7HTWqw6jDF"
+   ]
+  },
+  {
+   "naam": "Bachelor in de chemie – afstudeerrichting procestechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recVBCB7HTWqw6jDF"
+   ]
+  },
+  {
+   "naam": "Bachelor in de communicatie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "rec1vjnpb79XliuCu",
+    "rec5lFp8BZleBR6N3",
+    "recEZ4FrTpV0mg5QC"
+   ]
+  },
+  {
+   "naam": "Bachelor in de communicatie – afstudeerrichting commerciële communicatie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "rec1vjnpb79XliuCu"
+   ]
+  },
+  {
+   "naam": "Bachelor in de communicatie – afstudeerrichting event, concept en organisatie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor in de communicatie – afstudeerrichting public relations en voorlichting",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec1vjnpb79XliuCu",
+    "recpcD964rdzuOPgm"
+   ]
+  },
+  {
+   "naam": "Bachelor in de cybersecurity",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "recsT7ZNv34bqwxvN",
+    "rec126wKVHpGwSjlG"
+   ]
+  },
+  {
+   "naam": "Bachelor in de dans",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de digital arts en entertainment",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec1JeEaj1p3sHmz8"
+   ]
+  },
+  {
+   "naam": "Bachelor in de drone applications",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de ecotechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx",
+    "recVBCB7HTWqw6jDF"
+   ]
+  },
+  {
+   "naam": "Bachelor in de elektromechanica",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec3ho2bGcqpcyjS3",
+    "recsT7ZNv34bqwxvN"
+   ]
+  },
+  {
+   "naam": "Bachelor in de elektronica-ICT",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "recsT7ZNv34bqwxvN",
+    "rec1JeEaj1p3sHmz8"
+   ]
+  },
+  {
+   "naam": "Bachelor in de elektronica-ICT – afstudeerrichting elektronica",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recsT7ZNv34bqwxvN"
+   ]
+  },
+  {
+   "naam": "Bachelor in de elektronica-ICT – afstudeerrichting ICT",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "recsT7ZNv34bqwxvN"
+   ]
+  },
+  {
+   "naam": "Bachelor in de energietechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de ergotherapie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpzcxhfkg6gkf5p",
+    "recqu0nqqO5WbLbdy"
+   ]
+  },
+  {
+   "naam": "Bachelor in de fotografie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec0cBw9Awp7Swp8z"
+   ]
+  },
+  {
+   "naam": "Bachelor in de gezinswetenschappen",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpKemge6v1IX5Ru",
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Bachelor in de grafische en digitale media",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec1JeEaj1p3sHmz8",
+    "recEqa2c4DMvVMqzs",
+    "rec1vjnpb79XliuCu"
+   ]
+  },
+  {
+   "naam": "Bachelor in de houttechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de ingenieurswetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx",
+    "recImuqf5wD9d1imD",
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG"
+   ]
+  },
+  {
+   "naam": "Bachelor in de integrale veiligheid",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recIjctpDVPPXjOZo",
+    "recWHgWp5bhxwOsUz"
+   ]
+  },
+  {
+   "naam": "Bachelor in de interieurvormgeving",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de journalistiek",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "rec1JeEaj1p3sHmz8",
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3",
+    "rec1vjnpb79XliuCu",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor in de landschaps- en tuinarchitectuur",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de logopedie en de audiologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Bachelor in de luchtvaart",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de maatschappelijke veiligheid",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recIjctpDVPPXjOZo",
+    "recpKemge6v1IX5Ru",
+    "recWHgWp5bhxwOsUz"
+   ]
+  },
+  {
+   "naam": "Bachelor in de medische beeldvorming en radiotherapie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recT2920lKQ9BkTVO",
+    "recqu0nqqO5WbLbdy"
+   ]
+  },
+  {
+   "naam": "Bachelor in de medische technologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recT2920lKQ9BkTVO",
+    "recHEsf3oD2xyN5a0"
+   ]
+  },
+  {
+   "naam": "Bachelor in de modetechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de mondzorg",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recqu0nqqO5WbLbdy"
+   ]
+  },
+  {
+   "naam": "Bachelor in de multimedia en creatieve technologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec1JeEaj1p3sHmz8",
+    "rec0uqqxjbxtCv0Jn"
+   ]
+  },
+  {
+   "naam": "Bachelor in de netwerkeconomie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recIgCGs8TeF1cBp7",
+    "reckwL0ao20weSR96",
+    "recpcD964rdzuOPgm"
+   ]
+  },
+  {
+   "naam": "Bachelor in de ontwerp- en productietechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de oogzorg",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de orthopedagogie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpzcxhfkg6gkf5p",
+    "recIjctpDVPPXjOZo",
+    "recpKemge6v1IX5Ru",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Bachelor in de orthopedagogie – afstudeerrichting orthopedagogie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpzcxhfkg6gkf5p"
+   ]
+  },
+  {
+   "naam": "Bachelor in de orthopedagogie – afstudeerrichting toegepaste jeugdcriminologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recIjctpDVPPXjOZo"
+   ]
+  },
+  {
+   "naam": "Bachelor in de orthopedie",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de pedagogie van het jonge kind",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recijnUMoZRV5hvJC",
+    "recblqFA3JRAckhPT",
+    "recpzcxhfkg6gkf5p"
+   ]
+  },
+  {
+   "naam": "Bachelor in de podologie",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de pop- en rockmuziek",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de sociale en militaire wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec20YAygTT2QBTwJ",
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor in de sociale readaptatiewetenschappen",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpKemge6v1IX5Ru",
+    "recpzcxhfkg6gkf5p"
+   ]
+  },
+  {
+   "naam": "Bachelor in de textieltechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de toegepaste architectuur",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in de toegepaste gezondheidsbevordering",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recqu0nqqO5WbLbdy",
+    "recpKemge6v1IX5Ru"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste informatica",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG",
+    "rec1JeEaj1p3sHmz8",
+    "recsT7ZNv34bqwxvN"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste informatica – afstudeerrichting applicatie-ontwikkeling",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recRzav49h2398I0H",
+    "rec0uqqxjbxtCv0Jn"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste informatica – afstudeerrichting artificiële intelligentie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recGyiDrahaZ8JSOg",
+    "rec0uqqxjbxtCv0Jn"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste informatica – afstudeerrichting software-management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recTNnVICTJhbPbww",
+    "rec0uqqxjbxtCv0Jn"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste informatica – afstudeerrichting systeem- en netwerkbeheer",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recZmdvrTJFlV8U4N",
+    "rec1nW89sRa1sik1t",
+    "rec0uqqxjbxtCv0Jn"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste psychologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpzcxhfkg6gkf5p",
+    "recpKemge6v1IX5Ru",
+    "recbfXI6mc1WawDUT",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste psychologie – afstudeerrichting arbeids- en organisatiepsychologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste psychologie – afstudeerrichting klinische psychologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpzcxhfkg6gkf5p",
+    "recpKemge6v1IX5Ru"
+   ]
+  },
+  {
+   "naam": "Bachelor in de toegepaste psychologie – afstudeerrichting schoolpsychologie en pedagogische psychologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Bachelor in de verpleegkunde",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recqu0nqqO5WbLbdy",
+    "recWKACPuoy4PiCU2",
+    "recXY72kvcmkDBP1g",
+    "recT2920lKQ9BkTVO"
+   ]
+  },
+  {
+   "naam": "Bachelor in de voedings- en dieetkunde",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recqu0nqqO5WbLbdy",
+    "recHEsf3oD2xyN5a0"
+   ]
+  },
+  {
+   "naam": "Bachelor in de vroedkunde",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recXY72kvcmkDBP1g",
+    "recqu0nqqO5WbLbdy",
+    "recWKACPuoy4PiCU2"
+   ]
+  },
+  {
+   "naam": "Bachelor in de zorgtechnologie",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recqu0nqqO5WbLbdy",
+    "recT2920lKQ9BkTVO"
+   ]
+  },
+  {
+   "naam": "Bachelor in digital design & development",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec1JeEaj1p3sHmz8",
+    "rec0uqqxjbxtCv0Jn"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recIgCGs8TeF1cBp7",
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recZbKaTB5iVmHmGr",
+    "recC8obFXaHRGYJ6I"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting accountancy-fiscaliteit",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting eventmanagement",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting financiën en verzekeringen",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec9CObonY4QxCSAi"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting internationaal ondernemen",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting KMO-management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "reckwL0ao20weSR96"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting marketing",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpcD964rdzuOPgm"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting milieu- en duurzaamheidsmanagement",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting rechtspraktijk",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recWHgWp5bhxwOsUz"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting sport- en cultuurmanagement",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec5lFp8BZleBR6N3",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting supply chain management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recZbKaTB5iVmHmGr"
+   ]
+  },
+  {
+   "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting winkel- en retailmanagement",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "reckwL0ao20weSR96"
+   ]
+  },
+  {
+   "naam": "Bachelor in het energiemanagement",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in het facility management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec20YAygTT2QBTwJ",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor in het hotelmanagement",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec5lFp8BZleBR6N3",
+    "rec20YAygTT2QBTwJ"
+   ]
+  },
+  {
+   "naam": "Bachelor in het human resources management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor in het industrieel productontwerpen",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in het informatiemanagement en de multimedia",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec1JeEaj1p3sHmz8",
+    "rec1vjnpb79XliuCu"
+   ]
+  },
+  {
+   "naam": "Bachelor in het retailmanagement",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "reckwL0ao20weSR96"
+   ]
+  },
+  {
+   "naam": "Bachelor in het sociaal werk",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recpKemge6v1IX5Ru",
+    "recykThbbNNBizUGH",
+    "recC9f3xAZoK9EOSL",
+    "recZqiDnegXT78PH3",
+    "recmYo7wyOmi3q2Re",
+    "rec6JPMQNDPQMVYMP"
+   ]
+  },
+  {
+   "naam": "Bachelor in het sociaal werk – afstudeerrichting kunst- en cultuurbemiddeling",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor in het sociaal werk – afstudeerrichting maatschappelijk werk",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recykThbbNNBizUGH"
+   ]
+  },
+  {
+   "naam": "Bachelor in het sociaal werk – afstudeerrichting maatschappelijke advisering",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recmYo7wyOmi3q2Re",
+    "rec6JPMQNDPQMVYMP"
+   ]
+  },
+  {
+   "naam": "Bachelor in het sociaal werk – afstudeerrichting personeelswerk",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor in het sociaal werk – afstudeerrichting sociaal-cultureel werk",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recC9f3xAZoK9EOSL"
+   ]
+  },
+  {
+   "naam": "Bachelor in het toerisme en het recreatiemanagement",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec5lFp8BZleBR6N3",
+    "rec20YAygTT2QBTwJ"
+   ]
+  },
+  {
+   "naam": "Bachelor in het vastgoed",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recWHgWp5bhxwOsUz",
+    "reckwL0ao20weSR96"
+   ]
+  },
+  {
+   "naam": "Bachelor in Idea & Innovation Management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "reckwL0ao20weSR96",
+    "recpcD964rdzuOPgm"
+   ]
+  },
+  {
+   "naam": "Bachelor in media en entertainment business",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec1vjnpb79XliuCu",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor in musical",
+   "soort": "Professionele bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor in organisatie & management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec20YAygTT2QBTwJ",
+    "recEZ4FrTpV0mg5QC",
+    "rec1vjnpb79XliuCu",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor in organisatie & management – afstudeerrichting Business & Languages",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC"
+   ]
+  },
+  {
+   "naam": "Bachelor in organisatie & management – afstudeerrichting Business Translation & Interpreting",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC"
+   ]
+  },
+  {
+   "naam": "Bachelor in organisatie & management – afstudeerrichting Event & Project Management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor in organisatie & management – afstudeerrichting Health Care Management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "rec20YAygTT2QBTwJ"
+   ]
+  },
+  {
+   "naam": "Bachelor in organisatie & management – afstudeerrichting Intercultural Relations Management",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "rec20YAygTT2QBTwJ"
+   ]
+  },
+  {
+   "naam": "Bachelor in sport en bewegen",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD"
+   ]
+  },
+  {
+   "naam": "Bachelor in visual design",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recEqa2c4DMvVMqzs",
+    "rec1JeEaj1p3sHmz8"
+   ]
+  },
+  {
+   "naam": "Bachelor in wellbeing- en vitaliteitsmanagement",
+   "soort": "Professionele bachelor",
+   "kdg": [
+    "recbfXI6mc1WawDUT",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de Afrikaanse talen en culturen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de archeologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recZqiDnegXT78PH3",
+    "recImuqf5wD9d1imD"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de audiovisuele kunsten",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec0cBw9Awp7Swp8z",
+    "rec1JeEaj1p3sHmz8",
+    "recEOINnfUxsJw2dg"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de beeldende kunsten",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEOINnfUxsJw2dg",
+    "recEqa2c4DMvVMqzs",
+    "recLtyRTKlo6T1894",
+    "recFYOSRn9ShB0lsO",
+    "rec0cBw9Awp7Swp8z"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de conservatie-restauratie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recZqiDnegXT78PH3",
+    "recEOINnfUxsJw2dg"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de geschiedenis",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de kunstwetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEqa2c4DMvVMqzs",
+    "recLtyRTKlo6T1894",
+    "recFYOSRn9ShB0lsO",
+    "rec0cBw9Awp7Swp8z",
+    "recZqiDnegXT78PH3",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de kunstwetenschappen en de archeologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEqa2c4DMvVMqzs",
+    "recLtyRTKlo6T1894",
+    "recFYOSRn9ShB0lsO",
+    "rec0cBw9Awp7Swp8z",
+    "recZqiDnegXT78PH3",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de moraalwetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de musicologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recZqiDnegXT78PH3",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de muziek",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recZqiDnegXT78PH3",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de Oost-Europese talen en culturen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de Oosterse talen en culturen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de taal- en letterkunde",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de taal- en letterkunde: combinatie van twee talen te kiezen uit de Romaanse talen of de Germaanse talen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de taal- en letterkunde: combinatie van twee talen te kiezen uit Latijn, Grieks, Hebreeuws, de Romaanse talen of de Germaanse talen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de taal- en regiostudies: arabistiek en islamkunde",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de taal- en regiostudies: Chinese studies",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de taal- en regiostudies: Japanse studies",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de theologie en de religiewetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "recpKemge6v1IX5Ru"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de toegepaste taalkunde: combinatie van ten minste twee talen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de wijsbegeerte",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in de wijsbegeerte en de moraalwetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in het drama",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recZqiDnegXT78PH3",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Arts in het productdesign",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEqa2c4DMvVMqzs",
+    "rec1JeEaj1p3sHmz8"
+   ]
+  },
+  {
+   "naam": "Bachelor of Laws in de rechten",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recWHgWp5bhxwOsUz",
+    "recmYo7wyOmi3q2Re",
+    "recZqiDnegXT78PH3",
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science handelsingenieur",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science handelsingenieur in de beleidsinformatica",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science handelsingenieur/handelsingenieur in de beleidsinformatica",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de agogische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recykThbbNNBizUGH",
+    "recmYo7wyOmi3q2Re",
+    "recZqiDnegXT78PH3",
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC",
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de architectuur",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEqa2c4DMvVMqzs",
+    "recLtyRTKlo6T1894",
+    "recFYOSRn9ShB0lsO",
+    "rec0cBw9Awp7Swp8z",
+    "recZqiDnegXT78PH3",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de artificiële intelligentie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "rec1JeEaj1p3sHmz8",
+    "recsT7ZNv34bqwxvN",
+    "recImuqf5wD9d1imD"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de bestuurskunde en het publiek management",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recWHgWp5bhxwOsUz",
+    "recmYo7wyOmi3q2Re",
+    "recbfXI6mc1WawDUT",
+    "rec20YAygTT2QBTwJ"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de bio-industriële wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recBA2ode0A2142P1",
+    "reczJFHeiT61MUXUx",
+    "recVBCB7HTWqw6jDF"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de bio-ingenieurswetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recBA2ode0A2142P1",
+    "reczJFHeiT61MUXUx",
+    "recVBCB7HTWqw6jDF"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de biochemie en de biotechnologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recBA2ode0A2142P1",
+    "reczJFHeiT61MUXUx",
+    "recVBCB7HTWqw6jDF"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de biologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de biomedische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recHEsf3oD2xyN5a0",
+    "recBA2ode0A2142P1",
+    "recqu0nqqO5WbLbdy",
+    "recXY72kvcmkDBP1g",
+    "recWKACPuoy4PiCU2",
+    "recT2920lKQ9BkTVO",
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de biowetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recBA2ode0A2142P1",
+    "reczJFHeiT61MUXUx",
+    "recVBCB7HTWqw6jDF"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de chemie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de communicatiewetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "rec1JeEaj1p3sHmz8",
+    "recEZ4FrTpV0mg5QC",
+    "recImuqf5wD9d1imD",
+    "recZqiDnegXT78PH3",
+    "rec1vjnpb79XliuCu",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de computerwetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "rec1JeEaj1p3sHmz8",
+    "recsT7ZNv34bqwxvN",
+    "recImuqf5wD9d1imD"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de criminologische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recIjctpDVPPXjOZo",
+    "recWHgWp5bhxwOsUz"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de diergeneeskunde",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recHEsf3oD2xyN5a0",
+    "recBA2ode0A2142P1"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de economische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de economische wetenschappen/toegepaste economische wetenschappen/toegepaste economische wetenschappen: handelsingenieur",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de farmaceutische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recHEsf3oD2xyN5a0",
+    "recBA2ode0A2142P1",
+    "recqu0nqqO5WbLbdy",
+    "recXY72kvcmkDBP1g",
+    "recWKACPuoy4PiCU2",
+    "recT2920lKQ9BkTVO"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de fysica",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de fysica en de sterrenkunde",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de geneeskunde",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recqu0nqqO5WbLbdy",
+    "recWKACPuoy4PiCU2",
+    "recXY72kvcmkDBP1g",
+    "recT2920lKQ9BkTVO",
+    "recHEsf3oD2xyN5a0"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de geografie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de geografie en de geomatica",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de geologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de geowetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de handelswetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de industriële wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx",
+    "recImuqf5wD9d1imD",
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG",
+    "rec3ho2bGcqpcyjS3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de industriële wetenschappen: industrieel ontwerpen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx",
+    "recImuqf5wD9d1imD",
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de informatica",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "rec1JeEaj1p3sHmz8",
+    "recsT7ZNv34bqwxvN",
+    "recImuqf5wD9d1imD"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de ingenieurswetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx",
+    "recImuqf5wD9d1imD",
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de ingenieurswetenschappen: architectuur",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEqa2c4DMvVMqzs",
+    "recLtyRTKlo6T1894",
+    "recFYOSRn9ShB0lsO",
+    "rec0cBw9Awp7Swp8z",
+    "recZqiDnegXT78PH3",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de interieurarchitectuur",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recEqa2c4DMvVMqzs",
+    "recLtyRTKlo6T1894",
+    "recFYOSRn9ShB0lsO",
+    "rec0cBw9Awp7Swp8z",
+    "recZqiDnegXT78PH3",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de lichamelijke opvoeding en de bewegingswetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "recpzcxhfkg6gkf5p"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de logopedische en audiologische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC",
+    "recqu0nqqO5WbLbdy"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de mobiliteitswetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recZbKaTB5iVmHmGr"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de nautische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recZbKaTB5iVmHmGr"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de onderwijskunde",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recykThbbNNBizUGH",
+    "recmYo7wyOmi3q2Re",
+    "recZqiDnegXT78PH3",
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC",
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de pedagogische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recykThbbNNBizUGH",
+    "recmYo7wyOmi3q2Re",
+    "recZqiDnegXT78PH3",
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC",
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de politieke wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recC9f3xAZoK9EOSL",
+    "recZqiDnegXT78PH3",
+    "recWHgWp5bhxwOsUz",
+    "recmYo7wyOmi3q2Re"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de politieke wetenschappen en de sociologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recC9f3xAZoK9EOSL",
+    "recqu0nqqO5WbLbdy",
+    "recWKACPuoy4PiCU2",
+    "recpzcxhfkg6gkf5p",
+    "recZqiDnegXT78PH3",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de productontwikkeling",
+   "soort": "Academische bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor of Science in de psychologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recykThbbNNBizUGH",
+    "recmYo7wyOmi3q2Re",
+    "recZqiDnegXT78PH3",
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC",
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de revalidatiewetenschappen en de kinesitherapie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "recpzcxhfkg6gkf5p"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de scheepswerktuigkunde",
+   "soort": "Academische bachelor",
+   "kdg": []
+  },
+  {
+   "naam": "Bachelor of Science in de sociaal-economische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de sociale wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recC9f3xAZoK9EOSL",
+    "recqu0nqqO5WbLbdy",
+    "recWKACPuoy4PiCU2",
+    "recpzcxhfkg6gkf5p",
+    "recZqiDnegXT78PH3",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de sociologie",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recC9f3xAZoK9EOSL",
+    "recqu0nqqO5WbLbdy",
+    "recWKACPuoy4PiCU2",
+    "recpzcxhfkg6gkf5p",
+    "recZqiDnegXT78PH3",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de tandheelkunde",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recqu0nqqO5WbLbdy",
+    "recWKACPuoy4PiCU2",
+    "recHEsf3oD2xyN5a0"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de toegepaste economische wetenschappen",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de toegepaste economische wetenschappen: economisch beleid",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi",
+    "reckwL0ao20weSR96",
+    "recImuqf5wD9d1imD",
+    "recZbKaTB5iVmHmGr",
+    "recpcD964rdzuOPgm",
+    "recWHgWp5bhxwOsUz",
+    "recbfXI6mc1WawDUT",
+    "recC8obFXaHRGYJ6I",
+    "rec5zZ682qZ5Yvceg",
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de wiskunde",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in de wiskunde en Data Science",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Bachelor of Science in het milieu- en preventiemanagement",
+   "soort": "Academische bachelor",
+   "kdg": [
+    "reczJFHeiT61MUXUx",
+    "recVBCB7HTWqw6jDF"
+   ]
+  },
+  {
+   "naam": "Educatief graduaat in het secundair onderwijs",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec6TkLCvF8lj4Mu6",
+    "recImuqf5wD9d1imD"
+   ]
+  },
+  {
+   "naam": "Educatieve bachelor in het kleuteronderwijs",
+   "soort": "Educatieve bachelor",
+   "kdg": [
+    "recblqFA3JRAckhPT",
+    "rec0BgN1ylZo01Td8",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Educatieve bachelor in het lager onderwijs",
+   "soort": "Educatieve bachelor",
+   "kdg": [
+    "rec0BgN1ylZo01Td8",
+    "recblqFA3JRAckhPT",
+    "recImuqf5wD9d1imD"
+   ]
+  },
+  {
+   "naam": "Educatieve bachelor in het secundair onderwijs",
+   "soort": "Educatieve bachelor",
+   "kdg": [
+    "recImuqf5wD9d1imD",
+    "rec0BgN1ylZo01Td8"
+   ]
+  },
+  {
+   "naam": "Graduaat in de accounting administration",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec758eaCgPWDTmQd",
+    "rec9CObonY4QxCSAi"
+   ]
+  },
+  {
+   "naam": "Graduaat in de basisverpleegkunde",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec02MNWBVfzerROT",
+    "recqu0nqqO5WbLbdy",
+    "recdKl40cbdSFi0s7"
+   ]
+  },
+  {
+   "naam": "Graduaat in de biotechnologie",
+   "soort": "Graduaat",
+   "kdg": [
+    "recBA2ode0A2142P1",
+    "recHEsf3oD2xyN5a0"
+   ]
+  },
+  {
+   "naam": "Graduaat in de digitale vormgeving",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec1JeEaj1p3sHmz8",
+    "recEqa2c4DMvVMqzs"
+   ]
+  },
+  {
+   "naam": "Graduaat in de elektromechanische systemen",
+   "soort": "Graduaat",
+   "kdg": [
+    "recl4RtRhC3QBZmTg",
+    "rec3ho2bGcqpcyjS3",
+    "recsT7ZNv34bqwxvN"
+   ]
+  },
+  {
+   "naam": "Graduaat in de hernieuwbare energiesystemen",
+   "soort": "Graduaat",
+   "kdg": []
+  },
+  {
+   "naam": "Graduaat in de HR-support",
+   "soort": "Graduaat",
+   "kdg": [
+    "recbfXI6mc1WawDUT"
+   ]
+  },
+  {
+   "naam": "Graduaat in de HVAC-systemen",
+   "soort": "Graduaat",
+   "kdg": []
+  },
+  {
+   "naam": "Graduaat in de juridisch-administratieve ondersteuning",
+   "soort": "Graduaat",
+   "kdg": [
+    "recWHgWp5bhxwOsUz"
+   ]
+  },
+  {
+   "naam": "Graduaat in de laboratoriumassistentie",
+   "soort": "Graduaat",
+   "kdg": [
+    "recHEsf3oD2xyN5a0",
+    "reczJFHeiT61MUXUx"
+   ]
+  },
+  {
+   "naam": "Graduaat in de marketing- en de communicatiesupport",
+   "soort": "Graduaat",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "rec1vjnpb79XliuCu"
+   ]
+  },
+  {
+   "naam": "Graduaat in de orthopedagogische begeleiding",
+   "soort": "Graduaat",
+   "kdg": [
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC"
+   ]
+  },
+  {
+   "naam": "Graduaat in de podium- en eventtechnieken",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Graduaat in de sales support",
+   "soort": "Graduaat",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "reckwL0ao20weSR96"
+   ]
+  },
+  {
+   "naam": "Graduaat in de travel support",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Graduaat in de verkeerskunde en de mobiliteit",
+   "soort": "Graduaat",
+   "kdg": []
+  },
+  {
+   "naam": "Graduaat in de verzekeringen",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec9CObonY4QxCSAi"
+   ]
+  },
+  {
+   "naam": "Graduaat in de voertuigtechnieken",
+   "soort": "Graduaat",
+   "kdg": [
+    "recl4RtRhC3QBZmTg",
+    "rec3ho2bGcqpcyjS3"
+   ]
+  },
+  {
+   "naam": "Graduaat in de werforganisatie",
+   "soort": "Graduaat",
+   "kdg": []
+  },
+  {
+   "naam": "Graduaat in de werkvoorbereiding hout",
+   "soort": "Graduaat",
+   "kdg": []
+  },
+  {
+   "naam": "Graduaat in het bouwkundig tekenen",
+   "soort": "Graduaat",
+   "kdg": []
+  },
+  {
+   "naam": "Graduaat in het informatiebeheer",
+   "soort": "Graduaat",
+   "kdg": []
+  },
+  {
+   "naam": "Graduaat in het Internet of Things",
+   "soort": "Graduaat",
+   "kdg": [
+    "recsT7ZNv34bqwxvN",
+    "rec0uqqxjbxtCv0Jn"
+   ]
+  },
+  {
+   "naam": "Graduaat in het logies-, restaurant- & cateringmanagement",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec5lFp8BZleBR6N3"
+   ]
+  },
+  {
+   "naam": "Graduaat in het maatschappelijk werk",
+   "soort": "Graduaat",
+   "kdg": [
+    "recykThbbNNBizUGH",
+    "recpzcxhfkg6gkf5p",
+    "recijnUMoZRV5hvJC",
+    "rec6JPMQNDPQMVYMP",
+    "recZqiDnegXT78PH3"
+   ]
+  },
+  {
+   "naam": "Graduaat in het productiebeheer",
+   "soort": "Graduaat",
+   "kdg": [
+    "recZbKaTB5iVmHmGr"
+   ]
+  },
+  {
+   "naam": "Graduaat in het programmeren",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "recsT7ZNv34bqwxvN"
+   ]
+  },
+  {
+   "naam": "Graduaat in het retailmanagement",
+   "soort": "Graduaat",
+   "kdg": [
+    "recpcD964rdzuOPgm",
+    "reckwL0ao20weSR96"
+   ]
+  },
+  {
+   "naam": "Graduaat in het sociaal-cultureel werk",
+   "soort": "Graduaat",
+   "kdg": [
+    "recC9f3xAZoK9EOSL",
+    "recpKemge6v1IX5Ru"
+   ]
+  },
+  {
+   "naam": "Graduaat in het syndicaal werk",
+   "soort": "Graduaat",
+   "kdg": [
+    "recbfXI6mc1WawDUT",
+    "recpKemge6v1IX5Ru"
+   ]
+  },
+  {
+   "naam": "Graduaat in het systeem- en netwerkbeheer",
+   "soort": "Graduaat",
+   "kdg": [
+    "rec0uqqxjbxtCv0Jn",
+    "recsT7ZNv34bqwxvN"
+   ]
+  },
+  {
+   "naam": "Graduaat in het transport en de logistiek",
+   "soort": "Graduaat",
+   "kdg": [
+    "recZbKaTB5iVmHmGr"
+   ]
+  },
+  {
+   "naam": "Graduaat in het winkelmanagement",
+   "soort": "Graduaat",
+   "kdg": [
+    "reckwL0ao20weSR96",
+    "recpcD964rdzuOPgm"
+   ]
+  }
+ ]
+}
