@@ -10,7 +10,8 @@ studiekeuze. De data komt uit Airtable en wordt **elk uur** automatisch ververst
 Airtable  ──(elk uur, GitHub Action met token uit Secrets)──>  data.json  ──(fetch)──>  widget.js  ──(script)──>  kdg.be
 ```
 
-- `widget.js` — de webapp: opmaak, teksten, vaste links en logica. Laadt `data.json` uit dezelfde map.
+- `widget.js` — de webapp: opmaak en logica. Laadt `data.json` en `inhoud.json` uit dezelfde map.
+- `inhoud.json` — **het bewerkbare document**: alle teksten, de vaste links en de uitzonderingen per opleiding.
 - `data.json` — de gepubliceerde data. **Wordt automatisch overschreven** door de Action; niet manueel bewerken.
 - `build-data.js` — haalt Airtable op en schrijft `data.json`. Het token komt uit een GitHub Secret en staat **nooit** in de gepubliceerde code.
 - `index.html` — testpagina: toont de webapp zoals ze op GitHub Pages staat.
@@ -23,7 +24,7 @@ Airtable  ──(elk uur, GitHub Action met token uit Secrets)──>  data.json
 ## Embedden op kdg.be
 
 Plak dit één keer in de pagina (source/HTML-modus). Daarna hoeft de pagina niet meer aangepast te worden:
-data wijzig je in Airtable, opmaak en teksten in `widget.js`.
+data wijzig je in Airtable, teksten, links en uitzonderingen in `inhoud.json`, opmaak in `widget.js`.
 
 ```html
 <div id="kdg-plek-root"></div>
@@ -73,16 +74,42 @@ Regels in `build-data.js`:
 voorbij is, telt niet meer mee. Is er nog een optie zonder studietijdverlies, dan wordt die getoond; anders de
 laatste datum met studietijdverlies. Is er niets (meer) ingevuld, dan verwijst de tekst naar de SLC'er.
 
-## Teksten en vaste links aanpassen
+## Teksten, links en uitzonderingen aanpassen: `inhoud.json`
 
-Bovenaan `widget.js` staan twee blokken:
+Open `inhoud.json` op GitHub, klik op het potlood, pas aan en klik op **Commit changes**. Binnen enkele minuten staat het live.
 
-- `LINKS` — de vaste links (Inschrijven, Vrijstellingen, Infomomenten …). Vul de `url` in; zolang die leeg is,
-  staat de tekst er zonder werkende link.
-- `TEKST` — alle vragen, titels en zinnen.
+Het bestand heeft vier delen:
 
-Na een commit op `main` staat de wijziging binnen enkele minuten live (browsers kunnen `widget.js` tot
-ongeveer 10 minuten in de cache houden).
+- `teksten` — alle vragen, titels, zinnen en knopteksten. Woorden tussen accolades, zoals `{naam}` of `{opleiding}`, vult de webapp zelf in.
+- `links` — de vaste links. `url` leeg = nog geen link; een url die met `/` begint, is een pagina op kdg.be; een url die met `#` begint, is een anker op de pagina zelf (met `klasse` voor het scrollen). Met `perSoort` hangt de link af van het soort opleiding.
+- `extraInLijst` — opleidingspagina's die normaal niet in de keuzelijsten staan (verkorte trajecten …) maar er toch in moeten.
+- `uitzonderingen` — extra info voor bepaalde opleidingen. Elke uitzondering heeft een lijst `opleidingen` (titel exact zoals in Airtable) en een of meer van deze onderdelen:
+
+| Onderdeel | Effect op het scherm van die opleiding |
+|---|---|
+| `"februaristart": true` | Extra link naar het blok `#februaristart` op de opleidingspagina |
+| `"knop": { "label": "…", "url": "…" }` | Extra knop naast "Stuur een mail" |
+| `"starten": ["…", "…"]` | Vervangt de bullets onder "Kan je nu nog starten?" (eerste regel in het vet) |
+| `"extraTekst": "…"` | Extra alinea onder "Kan je nu nog starten?" |
+| `"links": [{ "label": "…", "url": "…" }]` | Extra links onder "Nog belangrijke informatie" |
+
+Voorbeeld van een nieuwe uitzondering:
+
+```json
+{
+  "opleidingen": ["Vroedkunde"],
+  "starten": ["Instappen kan nog tot eind november.", "Je verliest geen studietijd."]
+}
+```
+
+**Let op de vorm.** Tekst staat tussen dubbele aanhalingstekens, onderdelen zijn gescheiden door een komma en na het
+laatste onderdeel staat geen komma. Zit er toch een fout in, dan:
+
+- blijft de webapp werken met de ingebouwde standaardteksten (je wijziging is dan niet zichtbaar);
+- krijgt de Action een rood kruisje, met in de log de plaats van de fout;
+- meldt de log ook namen van opleidingen die niet overeenkomen met Airtable.
+
+Regels die met `_` beginnen, zijn uitleg en doen niets.
 
 ## Lokaal testen
 

@@ -1,0 +1,188 @@
+{
+  "_uitleg": [
+    "Dit bestand bevat alle teksten, vaste links en uitzonderingen van de webapp 'Je plek nog niet gevonden?'.",
+    "Bewerken: open het bestand op GitHub, klik op het potlood, pas aan en klik op 'Commit changes'. Na enkele minuten staat het live.",
+    "Let op de vorm: tekst staat tussen dubbele aanhalingstekens, onderdelen zijn gescheiden door een komma, na het laatste onderdeel staat geen komma.",
+    "Maak je een fout in de vorm, dan gebruikt de webapp de ingebouwde standaardteksten en krijg je een rood kruisje in de tab Actions.",
+    "Regels die met _ beginnen (zoals deze) zijn uitleg en doen niets."
+  ],
+  "teksten": {
+    "q1": "Weet je al wat je wilt studeren?",
+    "q2": "Heb je hiervoor al aan een andere hogeschool of universiteit gestudeerd?",
+    "q3": "Wil je iets in dezelfde richting studeren?",
+    "ja": "Ja",
+    "nee": "Nee",
+    "vraag": "Vraag {nummer}",
+    "start": "Wanneer wil je starten?",
+    "startNu": "Zo snel mogelijk of in februari",
+    "startSept": "Volgend academiejaar (september 2027)",
+    "pick": "Welke opleiding wil je volgen?",
+    "pickZoek": "Zoek je opleiding…",
+    "voor": "Wat heb je daar gestudeerd?",
+    "voorZoek": "Zoek je vorige opleiding…",
+    "thema": "Welk thema spreekt je aan?",
+    "themaAantal": "{aantal} opleidingen",
+    "themaWeetNiet": "Ik weet het nog niet",
+    "themaLijst": "Welke opleiding spreekt je aan?",
+    "themaSub": "Deze opleidingen horen bij {thema}.",
+    "themaTwijfel": "Ik twijfel nog: help me kiezen",
+    "_resultaat_opleiding": "Scherm na het kiezen van een opleiding, start zo snel mogelijk of in februari",
+    "slcTitel": "Contacteer je studieloopbaancoördinator",
+    "slcEen": "Je studiecoach is {naam}.",
+    "slcMeer": "Je studiecoaches zijn {naam}.",
+    "slcTekst": "Samen bekijk je jouw persoonlijk traject, wanneer je kan starten én welke vrijstellingen je kan krijgen.",
+    "slcKnop": "Stuur een mail",
+    "slcGeen": "Neem contact op met de opleiding via de opleidingspagina.",
+    "mailOnderwerp": "Late start voor de opleiding {opleiding}: vraag via website",
+    "startTitel": "Kan je nu nog starten?",
+    "startAltijd": "Starten kan altijd.",
+    "startMet": [
+      "Start je in februari? Dan neem je een aantal vakken op.",
+      "Vanaf september volg je het normale curriculum.",
+      "Je studeert samen met je toekomstige vrienden in juni af."
+    ],
+    "startZonder": [
+      "Start je in februari? Dan volg je een aangepast traject.",
+      "Je verliest hier geen studietijd."
+    ],
+    "startOnbekend": "Of je nu nog kunt instappen, bekijkt de studieloopbaancoördinator met jou.",
+    "februaristartLink": "Bekijk welke vakken je vanaf februari volgt",
+    "meerWeten": "Nog belangrijke informatie",
+    "opleidingspagina": "Opleidingspagina",
+    "_resultaat_september": "Scherm na het kiezen van een opleiding, start volgend academiejaar",
+    "infoTitel": "Kom naar een infomoment",
+    "infoTekst": "Je hebt nog tijd. Maak kennis met de opleiding, de docenten en de campus.",
+    "twijfel": "Twijfel je nog?",
+    "meerWeten2728": "Meer weten",
+    "_aansluitende_opleidingen": "Schermen met de KdG-opleidingen die aansluiten bij een vorige opleiding",
+    "altTitel": "Deze KdG-opleidingen sluiten aan bij wat je al studeerde",
+    "altSlcTitel": "Contacteer de studieloopbaancoördinator",
+    "altSlc1": "Kies hieronder de opleiding die je aanspreekt en neem contact op.",
+    "altSlc2": "De studieloopbaancoördinator bekijkt met jou wanneer je kunt instappen en welke vrijstellingen je kunt krijgen.",
+    "kaartMet": "Instappen kan nog tot {maand}, met studietijdverlies. Je doet langer over de opleiding dan de normale studieduur.",
+    "kaartZonder": "Instappen kan nog tot {maand}, zonder studietijdverlies. Je studeert af binnen de normale studieduur.",
+    "kaartMail": "Je mailt met",
+    "aanpak": "Hoe pak je het aan?",
+    "tijdTitel": "Je hebt nog tijd om te vergelijken en te kiezen",
+    "tijdInfo": "Leer de opleidingen kennen op een infomoment",
+    "_geen_aansluitende_opleiding": "Scherm als er voor de vorige opleiding geen KdG-opleiding gekoppeld is",
+    "geenAltTitel": "We hebben geen opleiding die hierbij aansluit",
+    "geenAltTekst": "Voor je vorige opleiding hebben we bij KdG geen opleiding die er rechtstreeks op aansluit. Wil je in dezelfde richting verder studeren? Dan wensen we je veel succes aan een andere hogeschool of universiteit.",
+    "geenAltTipsTitel": "Weet je het nog niet zeker?",
+    "geenAltTipsTekst": "Misschien past een andere richting beter bij je. Met onze tips ontdek je stap voor stap welke opleiding aansluit bij je interesses, talenten en verwachtingen.",
+    "geenAltHandig": "Ook handig",
+    "_studiekeuze": "Scherm 'Ik weet het nog niet'",
+    "keuzeTitel": "Dan beginnen we bij je studiekeuze.",
+    "tipsTitel": "Ontdek welke opleiding bij je past.",
+    "tipsTekst": "Twijfel je over je studiekeuze of weet je nog niet welke richting je uit wil? Met onze tips ontdek je stap voor stap welke opleiding aansluit bij je interesses, talenten en verwachtingen.",
+    "keuzeHandig": "Ook handig",
+    "vorige": "← Vorige vraag",
+    "opnieuw": "Opnieuw beginnen",
+    "aantalEen": "{aantal} opleiding",
+    "aantalMeer": "{aantal} opleidingen",
+    "laden": "Bezig met laden…",
+    "fout": "De gegevens konden niet geladen worden. Probeer later opnieuw."
+  },
+  "links": {
+    "_uitleg": [
+      "url leeg = nog geen link. Een url die met / begint, is een pagina op kdg.be. Een url die met # begint, is een anker op de pagina zelf.",
+      "perSoort: de link hangt af van het soort opleiding; 'standaard' geldt voor al de rest."
+    ],
+    "inschrijven": {
+      "label": "Inschrijven",
+      "perSoort": {
+        "Professionele bachelor": "/inschrijven/nederlandstalige-professionele-bachelor#inschrijven-voor-huidig-academiejaar-2026-27",
+        "Graduaat": "/inschrijven/graduaat#inschrijven-voor-huidig-academiejaar-2026-27",
+        "Educatieve bachelor": "/inschrijven/educatieve-bachelor#inschrijven-voor-huidig-academiejaar-2026-27",
+        "Academische bachelor": "/inschrijven/academische-bachelor-beeldende-kunsten-nederlandstalig-programma",
+        "standaard": "/inschrijven/nederlandstalige-professionele-bachelor#inschrijven-voor-huidig-academiejaar-2026-27"
+      }
+    },
+    "inschrijven2728": {
+      "label": "Inschrijven voor 2027-2028",
+      "perSoort": {
+        "Graduaat": "/inschrijven/graduaat#inschrijven-voor-volgend-academiejaar-2027-28",
+        "standaard": "/inschrijven/nederlandstalige-professionele-bachelor#inschrijven-voor-volgend-academiejaar-2027-28"
+      }
+    },
+    "vrijstellingen": {
+      "label": "Vrijstellingen",
+      "url": "/inschrijven/inschrijven-met-vrijstellingen-persoonlijk-deeltraject-pdt"
+    },
+    "februari": {
+      "label": "Starten in februari",
+      "url": "#februaristart",
+      "klasse": "page-scroll"
+    },
+    "tips": {
+      "label": "Tips voor je studiekeuze",
+      "url": "/studiekeuze-maken"
+    },
+    "infomomenten": {
+      "label": "Bekijk de infomomenten",
+      "url": "/infomomenten"
+    },
+    "volgLes": {
+      "label": "Volg een les",
+      "url": "/opleidingen/infomomenten/volg-een-les"
+    },
+    "aanbod": {
+      "label": "Opleidingsaanbod",
+      "url": "/opleidingen/alle-bachelors"
+    },
+    "stappen": {
+      "label": "5 stappen om te heroriënteren",
+      "url": "#5-stappen",
+      "klasse": "page-scroll"
+    }
+  },
+  "extraInLijst": {
+    "_uitleg": "Opleidingspagina's die normaal niet in de keuzelijsten staan (verkorte trajecten ...) maar er toch in moeten. Gebruik de titel exact zoals in Airtable.",
+    "opleidingen": [
+      "Verkorte Educatieve Bachelor Secundair Onderwijs"
+    ]
+  },
+  "uitzonderingen": [
+    {
+      "_uitleg": [
+        "Elke uitzondering geldt voor de opleidingen in 'opleidingen' (titel exact zoals in Airtable). Je kan er zoveel toevoegen als je wilt.",
+        "Mogelijke onderdelen, allemaal optioneel:",
+        "  februaristart: true        -> extra link naar het blok #februaristart op de opleidingspagina",
+        "  knop: { label, url }       -> extra knop naast 'Stuur een mail'",
+        "  starten: [ regel, regel ]  -> vervangt de bullets onder 'Kan je nu nog starten?' (eerste regel staat in het vet)",
+        "  extraTekst: tekst          -> extra alinea onder 'Kan je nu nog starten?'",
+        "  links: [ { label, url } ]  -> extra links onder 'Nog belangrijke informatie'"
+      ],
+      "opleidingen": [
+        "KMO-Management",
+        "Marketing",
+        "Supply Chain Management",
+        "Rechtspraktijk",
+        "Business & Languages",
+        "Accountancy-Fiscaliteit",
+        "Financiën en Verzekeringen",
+        "Event & Project Management",
+        "Cross Media Management",
+        "Toegepaste Informatica",
+        "Internationaal Ondernemen"
+      ],
+      "februaristart": true
+    },
+    {
+      "opleidingen": [
+        "Verkorte Educatieve Bachelor Secundair Onderwijs",
+        "Educatief Graduaat Secundair Onderwijs"
+      ],
+      "knop": {
+        "label": "Infomoment start februari",
+        "url": "/opleidingen/infomoment-verkorte-educatieve-bachelor-en-graduaat-secundair-onderwijs-start-februari"
+      }
+    },
+    {
+      "opleidingen": [
+        "Verkorte Educatieve Bachelor Secundair Onderwijs"
+      ],
+      "februaristart": true
+    }
+  ]
+}

@@ -72,7 +72,8 @@ function toonNaam(naam, mail) {
 }
 
 /** Zet de ruwe Airtable-records om naar de data voor de webapp. */
-function bouw({ opl, voor, contacten, types }) {
+function bouw({ opl, voor, contacten, types }, extraInLijst = []) {
+  const extra = new Set(extraInLijst.map(s => String(s).trim().toLowerCase()));
   const typeNaam = {}; types.forEach(r => typeNaam[r.id] = r.fields[TYPE.naam] || '');
   const contact = {}; contacten.forEach(r => contact[r.id] = { naam: (r.fields[CONTACT.naam] || '').trim(), mail: (r.fields[CONTACT.mail] || '').trim().toLowerCase() });
 
@@ -86,7 +87,7 @@ function bouw({ opl, voor, contacten, types }) {
     const eigenaar = slc.filter(c => c.mail === mail);
     if (eigenaar.length) slc = eigenaar;
     return {
-      id: r.id, naam: (f[OPL.title] || '').trim(), typeVol: type, type: TYPE_LABEL[type] || type,
+      id: r.id, naam: (f[OPL.title] || '').trim(), soort: type, type: TYPE_LABEL[type] || type,
       url: f[OPL.url] || '', themas: arr(f[OPL.themas]).map(naamVan),
       start: arr(f[OPL.start]).map(naamVan).filter(zeker).map(s => s.toLowerCase()),
       late: arr(f[OPL.late]).map(naamVan).filter(zeker).map(leesLate).filter(Boolean),
@@ -94,6 +95,7 @@ function bouw({ opl, voor, contacten, types }) {
     };
   }).filter(p => p.naam);
 
+  // soort = volledig type (bv. Educatieve bachelor), type = label in de webapp (Bachelor of Graduaat)
   // 2) Dubbele pagina's (bv. Nederlandse en Engelse pagina) samenvoegen tot een opleiding
   const groepen = {};
   paginas.forEach(p => { const k = p.naam + ' | ' + p.type; (groepen[k] = groepen[k] || []).push(p); });
@@ -103,7 +105,7 @@ function bouw({ opl, voor, contacten, types }) {
       (isEngels(a.url) - isEngels(b.url)) || ((b.mail ? 1 : 0) - (a.mail ? 1 : 0)) || (a.url.length - b.url.length));
     const p = g[0];
     p.themas = [...new Set(g.flatMap(x => x.themas))];
-    p.lijst = !!TYPE_LABEL[p.typeVol] && !NIET_IN_LIJST.test(p.naam) && !isEngels(p.url);
+    p.lijst = !!TYPE_LABEL[p.soort] && !isEngels(p.url) && (!NIET_IN_LIJST.test(p.naam) || extra.has(p.naam.toLowerCase()));
     g.forEach(x => kanoniek[x.id] = p.id);
     opleidingen[p.id] = p;
   });
@@ -120,8 +122,7 @@ function bouw({ opl, voor, contacten, types }) {
 
   // 4) Alleen opleidingen bewaren die in een lijst staan of waar een vooropleiding naar verwijst
   const lijst = Object.values(opleidingen).filter(p => p.lijst || gebruikt.has(p.id))
-    .sort((a, b) => a.naam.localeCompare(b.naam, 'nl') || a.type.localeCompare(b.type, 'nl'))
-    .map(({ typeVol, ...p }) => p);
+    .sort((a, b) => a.naam.localeCompare(b.naam, 'nl') || a.type.localeCompare(b.type, 'nl'));
 
   return { updated: new Date().toISOString(), opleidingen: lijst, vooropleidingen };
 }
@@ -144,21 +145,33 @@ async function fetchAll(table, velden) {
   return records;
 }
 
+/** Leest inhoud.json (teksten, links, uitzonderingen). Een fout in de vorm laat de Action mislukken, zodat je het merkt. */
+function leesInhoud() {
+  if (!fs.existsSync('inhoud.json')) return {};
+  try { return JSON.parse(fs.readFileSync('inhoud.json', 'utf8')); }
+  catch (e) { throw new Error('inhoud.json bevat een fout in de vorm (komma, aanhalingsteken of haakje): ' + e.message); }
+}
+
 async function main() {
+  const inhoud = leesInhoud();   // eerst: zo valt een fout in inhoud.json meteen op
   if (!process.env.AIRTABLE_TOKEN) { console.error('FOUT: AIRTABLE_TOKEN ontbreekt.'); process.exit(1); }
   const velden = o => Object.keys(o).filter(k => k !== 'table').map(k => o[k]);
   const [opl, voor, contacten, types] = await Promise.all([
     fetchAll(OPL.table, velden(OPL)), fetchAll(VOOR.table, velden(VOOR)),
     fetchAll(CONTACT.table, velden(CONTACT)), fetchAll(TYPE.table, velden(TYPE))
   ]);
-  const out = bouw({ opl, voor, contacten, types });
+  const out = bouw({ opl, voor, contacten, types }, (inhoud.extraInLijst || {}).opleidingen || []);
   // Veiligheid: een lege of bijna lege uitkomst wijst op een fout; dan de vorige data.json laten staan.
   if (out.opleidingen.length < 20) throw new Error(`Slechts ${out.opleidingen.length} opleidingen gevonden; data.json niet overschreven.`);
   fs.writeFileSync('data.json', JSON.stringify(out, null, 1));
   const zonderMail = out.opleidingen.filter(o => o.lijst && !o.mail).map(o => o.naam);
   console.log(`data.json geschreven: ${out.opleidingen.length} opleidingen (${out.opleidingen.filter(o => o.lijst).length} in de keuzelijsten), ${out.vooropleidingen.length} vooropleidingen.`);
   if (zonderMail.length) console.log('Zonder SLC-mailadres: ' + zonderMail.join(', '));
+  // Namen in inhoud.json die niet (meer) overeenkomen met een opleiding in Airtable
+  const namen = new Set(out.opleidingen.map(o => o.naam.toLowerCase()));
+  const onbekend = [...new Set((inhoud.uitzonderingen || []).flatMap(u => u.opleidingen || []).concat((inhoud.extraInLijst || {}).opleidingen || []))].filter(n => !namen.has(String(n).trim().toLowerCase()));
+  if (onbekend.length) console.log('LET OP, niet gevonden in Airtable (controleer de schrijfwijze in inhoud.json): ' + onbekend.join(', '));
 }
 
-module.exports = { bouw, toonNaam };
+module.exports = { bouw, toonNaam, leesInhoud };
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });

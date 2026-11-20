@@ -1,9 +1,10 @@
 {
- "updated": "2026-11-19T08:31:27.728Z",
+ "updated": "2026-11-20T05:54:59.703Z",
  "opleidingen": [
   {
    "id": "rec758eaCgPWDTmQd",
    "naam": "Accountancy-Fiscaliteit",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/accountancy-fiscaliteit",
    "themas": [
@@ -27,6 +28,7 @@
   {
    "id": "recGyiDrahaZ8JSOg",
    "naam": "AI & Data Engineer",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/artificiele-intelligentie",
    "themas": [
@@ -51,6 +53,7 @@
   {
    "id": "rec126wKVHpGwSjlG",
    "naam": "Applied Computer Science",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/applied-computer-science",
    "themas": [
@@ -75,6 +78,7 @@
   {
    "id": "rec3ho2bGcqpcyjS3",
    "naam": "Autotechnologie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/autotechnologie",
    "themas": [
@@ -98,6 +102,7 @@
   {
    "id": "rec02MNWBVfzerROT",
    "naam": "Basisverpleegkunde",
+   "soort": "Graduaat",
    "type": "Graduaat",
    "url": "https://www.kdg.be/opleidingen/graduaat/basisverpleegkunde",
    "themas": [
@@ -114,6 +119,7 @@
   {
    "id": "recIgCGs8TeF1cBp7",
    "naam": "Bedrijfsmanagement",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/bedrijfsmanagement",
    "themas": [
@@ -136,6 +142,7 @@
   {
    "id": "recEOINnfUxsJw2dg",
    "naam": "Beeldende Kunsten",
+   "soort": "Academische bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/academische-bachelor-beeldende-kunsten",
    "themas": [
@@ -154,6 +161,7 @@
   {
    "id": "recBA2ode0A2142P1",
    "naam": "Biochemie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/biochemie",
    "themas": [
@@ -177,6 +185,7 @@
   {
    "id": "recHEsf3oD2xyN5a0",
    "naam": "Biomedische Laboratoriumtechnologie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/biomedische-laboratoriumtechnologie",
    "themas": [
@@ -201,6 +210,7 @@
   {
    "id": "recEZ4FrTpV0mg5QC",
    "naam": "Business & Languages",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/business-languages",
    "themas": [
@@ -224,6 +234,7 @@
   {
    "id": "reczJFHeiT61MUXUx",
    "naam": "Chemie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/chemie",
    "themas": [
@@ -247,6 +258,7 @@
   {
    "id": "rec1vjnpb79XliuCu",
    "naam": "Cross Media Management",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/bachelor-cross-media-management",
    "themas": [
@@ -271,6 +283,7 @@
   {
    "id": "rec1nW89sRa1sik1t",
    "naam": "Cybersecurity Specialist",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/toegepaste-informatica/cybersecurity-specialist",
    "themas": [
@@ -295,6 +308,7 @@
   {
    "id": "rec6TkLCvF8lj4Mu6",
    "naam": "Educatief Graduaat Secundair Onderwijs",
+   "soort": "Graduaat",
    "type": "Graduaat",
    "url": "https://www.kdg.be/educatief-graduaat-leraar-secundair-onderwijs",
    "themas": [
@@ -320,6 +334,7 @@
   {
    "id": "rec5lFp8BZleBR6N3",
    "naam": "Event & Project Management",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/bachelor-event-projectmanagement",
    "themas": [
@@ -343,6 +358,7 @@
   {
    "id": "recZOC0DbFA1QNVk4",
    "naam": "Farmaceutische en Biologische Laboratoriumtechnologie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/farmaceutische-biologische-laboratoriumtechnologie",
    "themas": [
@@ -366,6 +382,7 @@
   {
    "id": "rec9CObonY4QxCSAi",
    "naam": "Financiën en Verzekeringen",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/financie-en-verzekeringswezen",
    "themas": [
@@ -389,6 +406,7 @@
   {
    "id": "rec0cBw9Awp7Swp8z",
    "naam": "Fotografie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/fotografie",
    "themas": [
@@ -412,6 +430,7 @@
   {
    "id": "rec6nXEmDwhF0g1IW",
    "naam": "Global Business",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/global-business",
    "themas": [
@@ -439,6 +458,7 @@
   {
    "id": "recGVhdyVoBEj45db",
    "naam": "Global Supply Chain Management",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/global-supply-chain-management",
    "themas": [
@@ -466,6 +486,7 @@
   {
    "id": "recEqa2c4DMvVMqzs",
    "naam": "Grafisch Ontwerp",
+   "soort": "Academische bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/grafisch-ontwerp",
    "themas": [
@@ -484,6 +505,7 @@
   {
    "id": "recbfXI6mc1WawDUT",
    "naam": "Human Resources Management",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/human-resources-management",
    "themas": [
@@ -508,6 +530,7 @@
   {
    "id": "recZmdvrTJFlV8U4N",
    "naam": "Infrastructure Engineer",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/systeem-en-netwerkbeheer",
    "themas": [
@@ -532,6 +555,7 @@
   {
    "id": "recC8obFXaHRGYJ6I",
    "naam": "Internationaal Ondernemen",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/internationaal-ondernemen",
    "themas": [
@@ -556,6 +580,7 @@
   {
    "id": "rec5zZ682qZ5Yvceg",
    "naam": "International Business Management",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/international-business-management",
    "themas": [
@@ -583,6 +608,7 @@
   {
    "id": "recwNjC4C2a938Mx9",
    "naam": "International Entrepreneurship",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/international-entrepreneurship",
    "themas": [
@@ -610,6 +636,7 @@
   {
    "id": "recsT7ZNv34bqwxvN",
    "naam": "Internet of Things",
+   "soort": "Graduaat",
    "type": "Graduaat",
    "url": "https://www.kdg.be/internet-of-things",
    "themas": [
@@ -634,6 +661,7 @@
   {
    "id": "recFYOSRn9ShB0lsO",
    "naam": "Juweelontwerp en Edelsmeedkunst",
+   "soort": "Academische bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/juweelontwerp-edelsmeedkunst",
    "themas": [
@@ -652,6 +680,7 @@
   {
    "id": "reckwL0ao20weSR96",
    "naam": "KMO-Management",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/kmo-management",
    "themas": [
@@ -676,6 +705,7 @@
   {
    "id": "recZqiDnegXT78PH3",
    "naam": "Kunst- en Cultuurbemiddeling",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/kunst-en-cultuurbemiddeling",
    "themas": [
@@ -704,6 +734,7 @@
   {
    "id": "recblqFA3JRAckhPT",
    "naam": "Leraar Kleuteronderwijs",
+   "soort": "Educatieve bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/leraar-kleuteronderwijs",
    "themas": [
@@ -731,6 +762,7 @@
   {
    "id": "rec0BgN1ylZo01Td8",
    "naam": "Leraar Lager Onderwijs",
+   "soort": "Educatieve bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/leraar-lager-onderwijs",
    "themas": [
@@ -758,6 +790,7 @@
   {
    "id": "recImuqf5wD9d1imD",
    "naam": "Leraar Secundair Onderwijs",
+   "soort": "Educatieve bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/leraar-secundair-onderwijs",
    "themas": [
@@ -781,6 +814,7 @@
   {
    "id": "recykThbbNNBizUGH",
    "naam": "Maatschappelijk Werk",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/maatschappelijk-werk",
    "themas": [
@@ -808,6 +842,7 @@
   {
    "id": "recirpV14wwT0PkaH",
    "naam": "Maatschappelijk Werk",
+   "soort": "Graduaat",
    "type": "Graduaat",
    "url": "https://www.kdg.be/maatschappelijk-werk-graduaat",
    "themas": [
@@ -826,6 +861,7 @@
   {
    "id": "recmYo7wyOmi3q2Re",
    "naam": "Maatschappelijke Advisering",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/maatschappelijke-advisering",
    "themas": [
@@ -854,6 +890,7 @@
   {
    "id": "recpcD964rdzuOPgm",
    "naam": "Marketing",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/marketing",
    "themas": [
@@ -878,6 +915,7 @@
   {
    "id": "recT2920lKQ9BkTVO",
    "naam": "Medische Beeldvorming en Radiotherapie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/medische-beeldvorming-en-radiotherapie",
    "themas": [
@@ -902,6 +940,7 @@
   {
    "id": "rec0R85w2ufnj6IOf",
    "naam": "Medische Laboratoriumtechnologie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/medische-laboratoriumtechnologie",
    "themas": [
@@ -926,6 +965,7 @@
   {
    "id": "rec1JeEaj1p3sHmz8",
    "naam": "Multimedia en Creatieve Technologie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/multimedia-creative-technologies",
    "themas": [
@@ -950,6 +990,7 @@
   {
    "id": "recWKACPuoy4PiCU2",
    "naam": "Nursing",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/nursing",
    "themas": [
@@ -977,6 +1018,7 @@
   {
    "id": "rec20YAygTT2QBTwJ",
    "naam": "Organisatie en Management",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/bachelor-organisatie-en-management",
    "themas": [
@@ -1000,6 +1042,7 @@
   {
    "id": "recpzcxhfkg6gkf5p",
    "naam": "Orthopedagogie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/orthopedagogie",
    "themas": [
@@ -1023,6 +1066,7 @@
   {
    "id": "recijnUMoZRV5hvJC",
    "naam": "Pedagogie van het Jonge Kind",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/pedagogie-van-het-jonge-kind",
    "themas": [
@@ -1051,6 +1095,7 @@
   {
    "id": "recP2wtaLRwaHo8Eh",
    "naam": "Physical AI Specialist",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/toegepaste-informatica/physical-ai-specialist",
    "themas": [
@@ -1075,6 +1120,7 @@
   {
    "id": "recVBCB7HTWqw6jDF",
    "naam": "Procestechnologie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/procestechnologie",
    "themas": [
@@ -1098,6 +1144,7 @@
   {
    "id": "recTNnVICTJhbPbww",
    "naam": "Product Owner",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/softwaremanagement",
    "themas": [
@@ -1122,6 +1169,7 @@
   {
    "id": "recWHgWp5bhxwOsUz",
    "naam": "Rechtspraktijk",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/rechtspraktijk",
    "themas": [
@@ -1145,6 +1193,7 @@
   {
    "id": "recpKemge6v1IX5Ru",
    "naam": "Sociaal Werk",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/sociaal-werk",
    "themas": [
@@ -1172,6 +1221,7 @@
   {
    "id": "recC9f3xAZoK9EOSL",
    "naam": "Sociaal-Cultureel Werk",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/sociaal-cultureel-werk",
    "themas": [
@@ -1199,6 +1249,7 @@
   {
    "id": "rec6JPMQNDPQMVYMP",
    "naam": "Sociaal-Juridische Dienstverlening",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/sociaal-juridische-dienstverlening",
    "themas": [
@@ -1227,6 +1278,7 @@
   {
    "id": "recRzav49h2398I0H",
    "naam": "Software Engineer",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/applicatieontwikkeling",
    "themas": [
@@ -1251,6 +1303,7 @@
   {
    "id": "recZbKaTB5iVmHmGr",
    "naam": "Supply Chain Management",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/supply-chain-management",
    "themas": [
@@ -1275,6 +1328,7 @@
   {
    "id": "rec0uqqxjbxtCv0Jn",
    "naam": "Toegepaste Informatica",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/toegepaste-informatica",
    "themas": [
@@ -1299,6 +1353,7 @@
   {
    "id": "recIjctpDVPPXjOZo",
    "naam": "Toegepaste Jeugdcriminologie",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/toegepaste-jeugdcriminologie",
    "themas": [
@@ -1320,8 +1375,34 @@
    "lijst": true
   },
   {
+   "id": "recA6oEMkE6uzZ5hz",
+   "naam": "Verkorte Educatieve Bachelor Secundair Onderwijs",
+   "soort": "Educatieve bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/leraar-secundair-onderwijs-verkort",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september",
+    "februari"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Maruca Fabry"
+   ],
+   "mail": "maruca.fabry@kdg.be",
+   "lijst": true
+  },
+  {
    "id": "recqu0nqqO5WbLbdy",
    "naam": "Verpleegkunde",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/verpleegkunde",
    "themas": [
@@ -1349,6 +1430,7 @@
   {
    "id": "recdKl40cbdSFi0s7",
    "naam": "Verpleegkunde - Brugprogramma",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/verpleegkunde-brugprogramma",
    "themas": [
@@ -1376,6 +1458,7 @@
   {
    "id": "recl4RtRhC3QBZmTg",
    "naam": "Voertuigtechnieken",
+   "soort": "Graduaat",
    "type": "Graduaat",
    "url": "https://www.kdg.be/voertuigtechnieken",
    "themas": [
@@ -1394,6 +1477,7 @@
   {
    "id": "recLtyRTKlo6T1894",
    "naam": "Vrije Kunsten",
+   "soort": "Academische bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/vrije-kunsten",
    "themas": [
@@ -1412,6 +1496,7 @@
   {
    "id": "recXY72kvcmkDBP1g",
    "naam": "Vroedkunde",
+   "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/vroedkunde",
    "themas": [

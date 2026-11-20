@@ -4,7 +4,7 @@
  *   <div id="kdg-plek-root"></div>
  *   <script src="https://kdg-marcom.github.io/late-start-webapp/widget.js" defer></script>
  * De data komt uit data.json (zelfde map), elk uur ververst vanuit Airtable.
- * Teksten en vaste links: zie TEKST en LINKS hieronder.
+ * Teksten, vaste links en uitzonderingen per opleiding: inhoud.json (zelfde map).
  */
 (function () {
   "use strict";
@@ -16,59 +16,22 @@
 
   // Waar staat data.json? Standaard naast dit script; anders via data-src op de div.
   var DATA_URL = root.dataset.src || (script && script.src ? new URL("data.json", script.src).href : "data.json");
+  var INHOUD_URL = root.dataset.inhoud || (script && script.src ? new URL("inhoud.json", script.src).href : "inhoud.json");
 
-  // ---------- Vaste links: vul de url in zodra die vastligt. Leeg = nog geen link. ----------
-  const LINKS = {
-    inschrijven:     { label: "Inschrijven", url: "" },
-    inschrijven2728: { label: "Inschrijven voor 2027-2028", url: "" },
-    vrijstellingen:  { label: "Vrijstellingen", url: "" },
-    infomomenten:    { label: "Bekijk de infomomenten", url: "" },
-    tips:            { label: "Tips voor je studiekeuze", url: "" },
-    openLessen:      { label: "Open lessen", url: "" },
-    aanbod:          { label: "Opleidingsaanbod", url: "" },
-    februari:        { label: "Starten in februari", url: "" },
-    stappen:         { label: "5 stappen om te heroriënteren", url: "" }
-  };
-
-  // ---------- Teksten ----------
-  const TEKST = {
-    q1: "Weet je al wat je wilt studeren?",
-    q2: "Heb je hiervoor al aan een andere hogeschool of universiteit gestudeerd?",
-    q3: "Wil je iets in dezelfde richting studeren?",
-    start: "Wanneer wil je starten?",
-    startNu: "Zo snel mogelijk of in februari",
-    startSept: "Volgend academiejaar (september 2027)",
-    pick: "Welke opleiding wil je volgen?", pickZoek: "Zoek je opleiding…",
-    voor: "Wat heb je daar gestudeerd?", voorZoek: "Zoek je vorige opleiding…",
-    thema: "Welk thema spreekt je aan?", themaWeetNiet: "Ik weet het nog niet",
-    themaLijst: "Welke opleiding spreekt je aan?", themaSub: "Deze opleidingen horen bij {thema}.", themaTwijfel: "Ik twijfel nog: help me kiezen",
-    slcTitel: "Contacteer je studieloopbaancoördinator",
-    slcTekst: "Die bekijkt met jou of en wanneer je kunt instappen, en welke vrijstellingen je kunt krijgen.",
-    slcKnop: "Stuur een mail",
-    slcGeen: "Neem contact op met de opleiding via de opleidingspagina.",
-    mailOnderwerp: "Late start voor de opleiding {opleiding}: vraag via website",
-    startTitel: "Kan je nu nog starten?",
-    startOnbekend: "Of je nu nog kunt instappen, bekijkt de studieloopbaancoördinator met jou.",
-    startFebZonder: "Starten in februari kan, zonder studietijdverlies.",
-    startZonder: "Instappen kan nog tot {maand}, zonder studietijdverlies.",
-    startMet: "Instappen kan nog tot {maand}, met studietijdverlies.",
-    startZonderUitleg: "Je studeert af binnen de normale studieduur.",
-    startMetUitleg: "Je doet langer over de opleiding dan de normale studieduur.",
-    meerWeten: "Meer weten", opleidingspagina: "Opleidingspagina",
-    infoTitel: "Kom naar een infomoment", infoTekst: "Je hebt nog tijd. Maak kennis met de opleiding, de docenten en de campus.",
-    twijfel: "Twijfel je nog?",
-    altTitel: "Deze KdG-opleidingen sluiten aan bij wat je al studeerde",
-    altSlcTitel: "Contacteer de studieloopbaancoördinator",
-    altSlc1: "Kies hieronder de opleiding die je aanspreekt en neem contact op.",
-    altSlc2: "De studieloopbaancoördinator bekijkt met jou wanneer je kunt instappen en welke vrijstellingen je kunt krijgen.",
-    aanpak: "Hoe pak je het aan?",
-    tijdTitel: "Je hebt nog tijd om te vergelijken en te kiezen", tijdInfo: "Leer de opleidingen kennen op een infomoment",
-    geenAlt: "Voor deze opleiding hebben we geen opleiding die er rechtstreeks op aansluit", geenAltHandig: "Wel een andere richting uit?",
-    keuzeTitel: "Dan beginnen we bij je studiekeuze", keuzeHandig: "Ook handig",
-    tipsTitel: "Begin bij onze tips voor je studiekeuze", tipsTekst: "Ontdek stap voor stap welke richting bij je past.",
-    vorige: "← Vorige vraag", opnieuw: "Opnieuw beginnen",
-    laden: "Bezig met laden…", fout: "De gegevens konden niet geladen worden. Probeer later opnieuw."
-  };
+  // ---------- Teksten, vaste links en uitzonderingen ----------
+  // Dit zijn de ingebouwde standaardwaarden. De echte inhoud staat in inhoud.json (zelfde map) en overschrijft ze.
+  const KDG = "https://www.kdg.be";
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const STD = {"teksten": {"q1": "Weet je al wat je wilt studeren?", "q2": "Heb je hiervoor al aan een andere hogeschool of universiteit gestudeerd?", "q3": "Wil je iets in dezelfde richting studeren?", "ja": "Ja", "nee": "Nee", "vraag": "Vraag {nummer}", "start": "Wanneer wil je starten?", "startNu": "Zo snel mogelijk of in februari", "startSept": "Volgend academiejaar (september 2027)", "pick": "Welke opleiding wil je volgen?", "pickZoek": "Zoek je opleiding…", "voor": "Wat heb je daar gestudeerd?", "voorZoek": "Zoek je vorige opleiding…", "thema": "Welk thema spreekt je aan?", "themaAantal": "{aantal} opleidingen", "themaWeetNiet": "Ik weet het nog niet", "themaLijst": "Welke opleiding spreekt je aan?", "themaSub": "Deze opleidingen horen bij {thema}.", "themaTwijfel": "Ik twijfel nog: help me kiezen", "slcTitel": "Contacteer je studieloopbaancoördinator", "slcEen": "Je studiecoach is {naam}.", "slcMeer": "Je studiecoaches zijn {naam}.", "slcTekst": "Samen bekijk je jouw persoonlijk traject, wanneer je kan starten én welke vrijstellingen je kan krijgen.", "slcKnop": "Stuur een mail", "slcGeen": "Neem contact op met de opleiding via de opleidingspagina.", "mailOnderwerp": "Late start voor de opleiding {opleiding}: vraag via website", "startTitel": "Kan je nu nog starten?", "startAltijd": "Starten kan altijd.", "startMet": ["Start je in februari? Dan neem je een aantal vakken op.", "Vanaf september volg je het normale curriculum.", "Je studeert samen met je toekomstige vrienden in juni af."], "startZonder": ["Start je in februari? Dan volg je een aangepast traject.", "Je verliest hier geen studietijd."], "startOnbekend": "Of je nu nog kunt instappen, bekijkt de studieloopbaancoördinator met jou.", "februaristartLink": "Bekijk welke vakken je vanaf februari volgt", "meerWeten": "Nog belangrijke informatie", "opleidingspagina": "Opleidingspagina", "infoTitel": "Kom naar een infomoment", "infoTekst": "Je hebt nog tijd. Maak kennis met de opleiding, de docenten en de campus.", "twijfel": "Twijfel je nog?", "meerWeten2728": "Meer weten", "altTitel": "Deze KdG-opleidingen sluiten aan bij wat je al studeerde", "altSlcTitel": "Contacteer de studieloopbaancoördinator", "altSlc1": "Kies hieronder de opleiding die je aanspreekt en neem contact op.", "altSlc2": "De studieloopbaancoördinator bekijkt met jou wanneer je kunt instappen en welke vrijstellingen je kunt krijgen.", "kaartMet": "Instappen kan nog tot {maand}, met studietijdverlies. Je doet langer over de opleiding dan de normale studieduur.", "kaartZonder": "Instappen kan nog tot {maand}, zonder studietijdverlies. Je studeert af binnen de normale studieduur.", "kaartMail": "Je mailt met", "aanpak": "Hoe pak je het aan?", "tijdTitel": "Je hebt nog tijd om te vergelijken en te kiezen", "tijdInfo": "Leer de opleidingen kennen op een infomoment", "geenAltTitel": "We hebben geen opleiding die hierbij aansluit", "geenAltTekst": "Voor je vorige opleiding hebben we bij KdG geen opleiding die er rechtstreeks op aansluit. Wil je in dezelfde richting verder studeren? Dan wensen we je veel succes aan een andere hogeschool of universiteit.", "geenAltTipsTitel": "Weet je het nog niet zeker?", "geenAltTipsTekst": "Misschien past een andere richting beter bij je. Met onze tips ontdek je stap voor stap welke opleiding aansluit bij je interesses, talenten en verwachtingen.", "geenAltHandig": "Ook handig", "keuzeTitel": "Dan beginnen we bij je studiekeuze.", "tipsTitel": "Ontdek welke opleiding bij je past.", "tipsTekst": "Twijfel je over je studiekeuze of weet je nog niet welke richting je uit wil? Met onze tips ontdek je stap voor stap welke opleiding aansluit bij je interesses, talenten en verwachtingen.", "keuzeHandig": "Ook handig", "vorige": "← Vorige vraag", "opnieuw": "Opnieuw beginnen", "aantalEen": "{aantal} opleiding", "aantalMeer": "{aantal} opleidingen", "laden": "Bezig met laden…", "fout": "De gegevens konden niet geladen worden. Probeer later opnieuw."}, "links": {"inschrijven": {"label": "Inschrijven", "perSoort": {"Professionele bachelor": "/inschrijven/nederlandstalige-professionele-bachelor#inschrijven-voor-huidig-academiejaar-2026-27", "Graduaat": "/inschrijven/graduaat#inschrijven-voor-huidig-academiejaar-2026-27", "Educatieve bachelor": "/inschrijven/educatieve-bachelor#inschrijven-voor-huidig-academiejaar-2026-27", "Academische bachelor": "/inschrijven/academische-bachelor-beeldende-kunsten-nederlandstalig-programma", "standaard": "/inschrijven/nederlandstalige-professionele-bachelor#inschrijven-voor-huidig-academiejaar-2026-27"}}, "inschrijven2728": {"label": "Inschrijven voor 2027-2028", "perSoort": {"Graduaat": "/inschrijven/graduaat#inschrijven-voor-volgend-academiejaar-2027-28", "standaard": "/inschrijven/nederlandstalige-professionele-bachelor#inschrijven-voor-volgend-academiejaar-2027-28"}}, "vrijstellingen": {"label": "Vrijstellingen", "url": "/inschrijven/inschrijven-met-vrijstellingen-persoonlijk-deeltraject-pdt"}, "februari": {"label": "Starten in februari", "url": "#februaristart", "klasse": "page-scroll"}, "tips": {"label": "Tips voor je studiekeuze", "url": "/studiekeuze-maken"}, "infomomenten": {"label": "Bekijk de infomomenten", "url": "/infomomenten"}, "volgLes": {"label": "Volg een les", "url": "/opleidingen/infomomenten/volg-een-les"}, "aanbod": {"label": "Opleidingsaanbod", "url": "/opleidingen/alle-bachelors"}, "stappen": {"label": "5 stappen om te heroriënteren", "url": "#5-stappen", "klasse": "page-scroll"}}, "uitzonderingen": [{"opleidingen": ["KMO-Management", "Marketing", "Supply Chain Management", "Rechtspraktijk", "Business & Languages", "Accountancy-Fiscaliteit", "Financiën en Verzekeringen", "Event & Project Management", "Cross Media Management", "Toegepaste Informatica", "Internationaal Ondernemen"], "februaristart": true}, {"opleidingen": ["Verkorte Educatieve Bachelor Secundair Onderwijs", "Educatief Graduaat Secundair Onderwijs"], "knop": {"label": "Infomoment start februari", "url": "/opleidingen/infomoment-verkorte-educatieve-bachelor-en-graduaat-secundair-onderwijs-start-februari"}}, {"opleidingen": ["Verkorte Educatieve Bachelor Secundair Onderwijs"], "februaristart": true}]};
+  let TEKST = Object.assign({}, STD.teksten), LINKS = Object.assign({}, STD.links), REGELS = STD.uitzonderingen || [];
+  function neemInhoud(inh) {
+    if (!inh || typeof inh !== "object") return;
+    if (inh.teksten) Object.keys(inh.teksten).forEach(k => { if (k.charAt(0) !== "_") TEKST[k] = inh.teksten[k]; });
+    if (inh.links) Object.keys(inh.links).forEach(k => { if (k.charAt(0) !== "_") LINKS[k] = Object.assign({}, LINKS[k], inh.links[k]); });
+    if (Array.isArray(inh.uitzonderingen)) REGELS = inh.uitzonderingen;
+  }
+  const T = (k, v) => { let s = String(TEKST[k] == null ? "" : TEKST[k]); if (v) Object.keys(v).forEach(n => { s = s.split("{" + n + "}").join(v[n]); }); return s; };
+  const TL = k => Array.isArray(TEKST[k]) ? TEKST[k] : (TEKST[k] ? [TEKST[k]] : []);
 
   const CSS = `
   #kdg-plek-root{
@@ -81,13 +44,13 @@
   #kdg-plek-root h2, #kdg-plek-root h3{color:#1d1d1b}
   #kdg-plek-root p{margin:0}
 
-  #kdg-plek-root .paneel{background:var(--paneel); padding:30px 32px; margin:0 0 18px}
-  #kdg-plek-root .stap{font-size:.82em; font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin:0 0 6px}
-  #kdg-plek-root .kop{margin:0 0 18px}
+  #kdg-plek-root .paneel{background:var(--paneel); padding:44px 44px 48px; margin:0 0 18px}
+  #kdg-plek-root .stap{font-size:.82em; font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin:0 0 10px}
+  #kdg-plek-root .kop{margin:0 0 28px}
   #kdg-plek-root .zoekbox input{width:100%; font:inherit; padding:15px 16px; border:2px solid #000; background:#fff; outline:none; color:#1d1d1b}
   #kdg-plek-root .zoekbox input:focus{box-shadow:0 0 0 3px #000}
-  #kdg-plek-root .telling{margin:14px 2px 12px; color:#1d1d1b}
-  #kdg-plek-root .paneel .sub{margin:-8px 0 16px}
+  #kdg-plek-root .telling{margin:18px 2px 14px; color:#1d1d1b}
+  #kdg-plek-root .paneel .sub{margin:-14px 0 24px}
   #kdg-plek-root .paneel > :last-child{margin-bottom:0}
 
   #kdg-plek-root .lijst{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:14px}
@@ -99,6 +62,9 @@
   #kdg-plek-root .opl-nm{font-weight:800; font-size:1.18em}
   #kdg-plek-root .opl-tags{display:flex; flex-wrap:wrap; gap:8px}
   #kdg-plek-root .tag{font-size:.82em; padding:4px 10px; white-space:nowrap}
+  #kdg-plek-root .label{display:inline-block; font-size:12px; line-height:1.3; font-weight:700; letter-spacing:.03em; text-transform:uppercase; padding:3px 8px; border-radius:3px; white-space:nowrap; vertical-align:middle; position:relative; top:-.12em}
+  #kdg-plek-root .lijst.compact .label{top:0}
+  #kdg-plek-root .sectie .extra{margin:14px 0 0}
   #kdg-plek-root .lijst.compact{grid-template-columns:1fr; gap:4px; max-height:380px; overflow-y:auto; padding-right:6px; scrollbar-gutter:stable}
   #kdg-plek-root .lijst.compact .opl-knop{flex-direction:row; align-items:center; justify-content:space-between; gap:12px; padding:9px 14px}
   #kdg-plek-root .lijst.compact .opl-nm{font-weight:700; font-size:1em}
@@ -106,28 +72,28 @@
   #kdg-plek-root .lijst.compact .tag{font-size:.75em; padding:2px 8px}
 
   #kdg-plek-root .terug{font:inherit; color:#1d1d1b; background:none; border:0; cursor:pointer; padding:6px 0; margin:0 22px 18px 0; text-decoration:underline}
-  #kdg-plek-root .opl-head{background:var(--paneel); padding:26px 30px; margin:0 0 26px}
+  #kdg-plek-root .opl-head{background:var(--paneel); padding:44px 44px 48px; margin:0 0 26px}
   #kdg-plek-root .opl-head h2{margin:0 0 12px}
   #kdg-plek-root .badges{display:flex; flex-wrap:wrap; gap:8px}
-  #kdg-plek-root .blok h2{margin:0 0 4px}
-  #kdg-plek-root .blok h2{display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px}
-  #kdg-plek-root .blok h2 .type{font-weight:400; font-size:.62em; display:inline-flex}
-  #kdg-plek-root .sectie{margin-top:22px; padding-top:20px; border-top:1px solid rgba(0,0,0,.25)}
-  #kdg-plek-root .sectie.wit{background:#fff; border:0; padding:22px 24px; margin-top:18px}
-  #kdg-plek-root .sectie.wit + .sectie{border-top:0; padding-top:0}
-  #kdg-plek-root .sectie h3{margin:0 0 6px}
+  #kdg-plek-root .blok h2{margin:0 0 6px}
+  #kdg-plek-root .blok h2{display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px}
+  #kdg-plek-root .blok h2 .type{display:inline-flex}
+  #kdg-plek-root .sectie{margin-top:36px; padding-top:32px; border-top:1px solid rgba(0,0,0,.25)}
+  #kdg-plek-root .sectie.wit{background:#fff; border:0; padding:30px 32px; margin-top:30px}
+  #kdg-plek-root .sectie.wit + .sectie{border-top:0; padding-top:4px}
+  #kdg-plek-root .sectie h3{margin:0 0 10px}
   #kdg-plek-root .blok > h3{margin:0 0 8px}
-  #kdg-plek-root .kaarten.inblok{margin-top:18px; gap:18px}
-  #kdg-plek-root .sectie.wit h3{margin-bottom:12px}
-  #kdg-plek-root .sectie.wit h3:has(+ p),#kdg-plek-root .sectie.wit h3:has(+ ul){margin-bottom:6px}
-  #kdg-plek-root .blok .badges{margin-top:10px}
+  #kdg-plek-root .kaarten.inblok{margin-top:30px; gap:22px}
+  #kdg-plek-root .sectie.wit h3{margin-bottom:16px}
+  #kdg-plek-root .sectie.wit h3:has(+ p),#kdg-plek-root .sectie.wit h3:has(+ ul){margin-bottom:10px}
+  #kdg-plek-root .blok .badges{margin-top:14px}
   #kdg-plek-root .of{margin:14px 0 0 !important}
   #kdg-plek-root .of a{color:inherit; text-decoration:underline}
   #kdg-plek-root .opl-head .intro{margin:14px 0 0}
-  #kdg-plek-root .sectie p{margin:0 0 12px}
+  #kdg-plek-root .sectie p{margin:0 0 18px}
   #kdg-plek-root .sectie p:last-child,#kdg-plek-root .sectie ul:last-child{margin-bottom:0}
   #kdg-plek-root .links{margin:0; padding-left:1.2em}
-  #kdg-plek-root .links li{margin:4px 0}
+  #kdg-plek-root .links li{margin:8px 0}
   #kdg-plek-root .links a{color:inherit; text-decoration:underline}
   #kdg-plek-root .links a,#kdg-plek-root .leeglink,#kdg-plek-root .maillink,#kdg-plek-root .terug{color:var(--link); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; cursor:pointer}
   #kdg-plek-root .links a:hover,#kdg-plek-root .leeglink:hover,#kdg-plek-root .maillink:hover,#kdg-plek-root .terug:hover{text-decoration-thickness:3px}
@@ -149,15 +115,15 @@
   #kdg-plek-root .cta:active{background:var(--grijs-bg); color:#000}
   #kdg-plek-root .cta.sec{background:#fff; color:#000}
   #kdg-plek-root .cta svg{width:16px; height:16px}
-  #kdg-plek-root .cta.breed{display:flex; width:100%; justify-content:space-between; margin-top:18px; padding:18px 22px; font-size:1.1em}
+  #kdg-plek-root .cta.breed{display:flex; width:100%; justify-content:space-between; margin-top:26px; padding:18px 22px; font-size:1.1em}
 
 
-  /* Werkmateriaal voor het overleg, hoort niet bij de widget */
   #kdg-plek-root .status{margin:0; padding:18px 0}
 
   @media(max-width:640px){
-    #kdg-plek-root .paneel{padding:22px 20px}
-    #kdg-plek-root .opl-head{padding:22px 20px}
+    #kdg-plek-root .paneel{padding:30px 22px 32px}
+    #kdg-plek-root .opl-head{padding:30px 22px 32px}
+    #kdg-plek-root .sectie.wit{padding:24px 22px}
     #kdg-plek-root .lijst{grid-template-columns:1fr}
     #kdg-plek-root .kaarten{grid-template-columns:1fr}
     #kdg-plek-root .kaart{grid-template-columns:1fr; padding:22px}
@@ -168,7 +134,7 @@
     const st = document.createElement("style"); st.id = "kdg-plek-css"; st.textContent = CSS; document.head.appendChild(st);
   }
   const app = document.createElement("div"); app.setAttribute("aria-live", "polite"); root.appendChild(app);
-  app.innerHTML = `<p class="status">${TEKST.laden}</p>`;
+  app.innerHTML = `<p class="status">${esc(T("laden"))}</p>`;
 
   // ---------- Data ----------
   let OPL = {}, LIJST = [], VOOR = [], THEMAS = {}, THEMA_NAMEN = [];
@@ -191,17 +157,13 @@
   }
   function startBullets(o) {
     const k = startKeuze(o); if (!k) return null;
-    const kop = !k.verlies
-      ? (k.maand === "februari" && (o.start || []).includes("februari") ? TEKST.startFebZonder : TEKST.startZonder.replace("{maand}", k.maand))
-      : TEKST.startMet.replace("{maand}", k.maand);
-    return [`<strong>${esc(kop)}</strong>`, esc(k.verlies ? TEKST.startMetUitleg : TEKST.startZonderUitleg)];
+    return [`<strong>${esc(T("startAltijd"))}</strong>`].concat(TL(k.verlies ? "startMet" : "startZonder").map(esc));
   }
   const startRang = o => { const k = startKeuze(o); return !k ? 99 : (k.verlies ? 50 : 0) + k.i; };
 
   // ---------- Bouwstenen ----------
   const state = { screen: "q1", history: [], stap: 1, opleiding: null, voor: null, thema: null };
-  const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const plat = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const plat = s => String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const TYPE_KLEUR = { "Bachelor": "#6991c8", "Graduaat": "#ff873c" };
   const SVG_KOP = '<svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">';
   const ICONS = {
@@ -210,94 +172,124 @@
   };
   const arrow = '<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const tag = (label, kleur) => `<span class="tag" style="background:${kleur || "#cdd2d2"}">${esc(label)}</span>`;
-  const typeTag = o => tag(o.type, TYPE_KLEUR[o.type]);
+  const label = (tekst, kleur) => `<span class="label" style="background:${kleur || "#cdd2d2"}">${esc(tekst)}</span>`;
+  const typeTag = o => label(o.type, TYPE_KLEUR[o.type]);
 
   // Knop: act = stap in de webapp, href = echte link, geen van beide = nog geen link
   const knop = (label, o = {}) => o.act
     ? `<button class="cta ${o.sec ? "sec" : ""} ${o.breed ? "breed" : ""}" data-act="${o.act}">${esc(label)} ${arrow}</button>`
     : o.href
-      ? `<a class="cta ${o.sec ? "sec" : ""}" href="${esc(o.href)}"${/^mailto:/.test(o.href) ? "" : ' target="_blank" rel="noopener"'}>${esc(label)} ${arrow}</a>`
+      ? `<a class="cta ${o.sec ? "sec" : ""}" href="${esc(o.href)}"${/^(mailto:|#)/.test(o.href) ? "" : ' target="_blank" rel="noopener"'}>${esc(label)} ${arrow}</a>`
       : `<span class="cta ${o.sec ? "sec" : ""} leeg">${esc(label)} ${arrow}</span>`;
-  const link = (label, href) => href ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(label)}</a>` : `<span class="leeglink">${esc(label)}</span>`;
-  const vast = k => link(LINKS[k].label, LINKS[k].url);
-  const vastKnop = (k, o = {}) => knop(LINKS[k].label, { href: LINKS[k].url, sec: o.sec });
-  const paginaLink = o => link(TEKST.opleidingspagina, o.url);
-  const paginaKnop = (o, primair) => knop(TEKST.opleidingspagina, { href: o.url, sec: !primair });
+  const link = (label, href, klasse) => !href ? `<span class="leeglink">${esc(label)}</span>`
+    : href.charAt(0) === "#" ? `<a href="${esc(href)}"${klasse ? ` class="${klasse}"` : ""}>${esc(label)}</a>`
+    : `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+  // Juiste url van een vaste link, eventueel volgens het soort opleiding (o)
+  const vastUrl = (k, o) => { const L = LINKS[k] || {}; const s = L.perSoort;
+    return volUrl(s ? (s[(o || {}).soort] || ((o || {}).type === "Graduaat" && s.Graduaat) || s.standaard || "") : (L.url || "")); };
+  const vast = (k, o) => link((LINKS[k] || {}).label || k, vastUrl(k, o), (LINKS[k] || {}).klasse);
+  const vastKnop = (k, o = {}) => knop((LINKS[k] || {}).label || k, { href: vastUrl(k, o.opl), sec: o.sec });
+  const paginaLink = o => link(T("opleidingspagina"), o.url);
+  const paginaKnop = (o, primair) => knop(T("opleidingspagina"), { href: o.url, sec: !primair });
 
-  const vraag = (kop, knoppen) => `<div class="paneel"><p class="stap">Vraag ${state.stap}</p><h2 class="kop">${esc(kop)}</h2><div class="knoppen">${knoppen}</div></div>`;
-  const jaNee = (kop, ja, nee) => vraag(kop, knop("Ja", { act: ja }) + knop("Nee", { act: nee, sec: true }));
+  const vraag = (kop, knoppen) => `<div class="paneel"><p class="stap">${esc(T("vraag", { nummer: state.stap }))}</p><h2 class="kop">${esc(kop)}</h2><div class="knoppen">${knoppen}</div></div>`;
+  const jaNee = (kop, ja, nee) => vraag(kop, knop(T("ja"), { act: ja }) + knop(T("nee"), { act: nee, sec: true }));
   const lijst = (items, act, compact) => `<ul class="lijst${compact ? " compact" : ""}" id="kdg-plek-list">${items.map((it, i) =>
     `<li data-text="${esc(plat(it.naam))}"><button class="opl-knop" data-act="${act}" data-i="${i}"><span class="opl-nm">${esc(it.naam)}</span><span class="opl-tags">${it.tags}</span></button></li>`).join("")}</ul>`;
-  const zoekLijst = (kop, placeholder, items, act) => `<div class="paneel"><p class="stap">Vraag ${state.stap}</p><h2 class="kop">${esc(kop)}</h2>
+  const zoekLijst = (kop, placeholder, items, act) => `<div class="paneel"><p class="stap">${esc(T("vraag", { nummer: state.stap }))}</p><h2 class="kop">${esc(kop)}</h2>
     <div class="zoekbox"><input id="kdg-plek-search" type="text" placeholder="${esc(placeholder)}" autocomplete="off" aria-label="${esc(placeholder)}"></div>
-    <p class="telling" id="kdg-plek-telling">${items.length} opleidingen</p>${lijst(items, act, true)}</div>`;
+    <p class="telling" id="kdg-plek-telling">${esc(T("aantalMeer", { aantal: items.length }))}</p>${lijst(items, act, true)}</div>`;
   const sectie = (titel, desc, detail, knoppen, links, wit) => `<section class="sectie${wit ? " wit" : ""}"><h3>${esc(titel)}</h3>${desc ? `<p class="desc">${desc}</p>` : ""}${detail ? `<p class="detail">${detail}</p>` : ""}
     ${knoppen ? `<div class="knoppen">${knoppen}</div>` : ""}${links ? `<ul class="links">${links.map(l => `<li>${l}</li>`).join("")}</ul>` : ""}</section>`;
   const kaart = (ico, titel, desc, detail, knoppen, punten) => `<div class="kaart"><div class="ico">${SVG_KOP}${ICONS[ico]}</svg></div><div>
     <h3>${titel}</h3>${desc ? `<p class="desc">${desc}</p>` : ""}${detail ? `<p class="detail">${detail}</p>` : ""}${punten ? `<ul class="punten">${punten.map(x => `<li>${x}</li>`).join("")}</ul>` : ""}
     ${knoppen ? `<div class="knoppen">${knoppen}</div>` : ""}</div></div>`;
-  const blok = (o, secties) => `<div class="opl-head blok"><h2>${esc(o.naam)} <span class="type">${tag(o.type, "#fff")}</span></h2>${secties.join("")}</div>`;
+  const blok = (o, secties) => `<div class="opl-head blok"><h2>${esc(o.naam)} <span class="type">${label(o.type, "#fff")}</span></h2>${secties.join("")}</div>`;
 
   // SLC'er: namen + één mailadres (gedeelde mailbox of persoonlijk adres)
-  const mailto = o => "mailto:" + o.mail + "?subject=" + encodeURIComponent(TEKST.mailOnderwerp.replace("{opleiding}", o.naam));
-  const slcDetail = o => !o.mail ? esc(TEKST.slcGeen)
-    : "Je mailt met " + (o.slc && o.slc.length ? `<b>${esc(o.slc.join(" en "))}</b>: ` : "") + `<a class="maillink" href="${esc(mailto(o))}">${esc(o.mail)}</a>`;
-  const slcKnop = o => o.mail ? knop(TEKST.slcKnop, { href: mailto(o) }) : "";
-  const startSectie = o => { const b = startBullets(o); return sectie(TEKST.startTitel, "", b ? "" : esc(TEKST.startOnbekend), "", b); };
-  const startKort = o => { const b = startBullets(o); return b ? b.join(" ") : esc(TEKST.startOnbekend); };
-  const tipsBlok = (titel, badges, handigTitel) => `<div class="opl-head blok"><h2>${esc(titel)}</h2>${badges ? `<div class="badges">${badges}</div>` : ""}
-    ${sectie(TEKST.tipsTitel, esc(TEKST.tipsTekst), "", vastKnop("tips"), null, true)}
-    ${sectie(handigTitel, "", "", "", [vast("aanbod"), vast("februari"), vast("vrijstellingen")])}</div>`;
-  const startQ = r => vraag(TEKST.start, knop(TEKST.startNu, { act: "startNu" + r }) + knop(TEKST.startSept, { act: "startSept" + r, sec: true }));
+  const mailto = o => "mailto:" + o.mail + "?subject=" + encodeURIComponent(T("mailOnderwerp", { opleiding: o.naam }));
+  const slcWie = o => !(o.slc && o.slc.length) ? "" : T(o.slc.length > 1 ? "slcMeer" : "slcEen", { naam: o.slc.join(" en ") }) + " ";
+  const slcTekst = o => !o.mail ? esc(T("slcGeen")) : esc(slcWie(o) + T("slcTekst"));
+  const slcDetail = o => !o.mail ? esc(T("slcGeen"))
+    : esc(T("kaartMail")) + " " + (o.slc && o.slc.length ? `<b>${esc(o.slc.join(" en "))}</b>: ` : "") + `<a class="maillink" href="${esc(mailto(o))}">${esc(o.mail)}</a>`;
+  const slcKnop = o => o.mail ? knop(T("slcKnop"), { href: mailto(o) }) : "";
+  // Uitzonderingen uit inhoud.json die voor deze opleiding gelden, samengevoegd
+  function regelsVoor(o) {
+    const r = { links: [] }, naam = plat(o.naam);
+    REGELS.forEach(x => {
+      if (!x || !Array.isArray(x.opleidingen) || !x.opleidingen.some(n => plat(n) === naam)) return;
+      if (x.februaristart) r.februaristart = true;
+      if (x.knop && x.knop.label) r.knop = x.knop;
+      if (Array.isArray(x.starten) && x.starten.length) r.starten = x.starten;
+      if (x.extraTekst) r.extraTekst = x.extraTekst;
+      if (Array.isArray(x.links)) r.links = r.links.concat(x.links.filter(l => l && l.label));
+    });
+    return r;
+  }
+  const volUrl = u => u && u.charAt(0) === "/" ? KDG + u : u;
+  const startSectieA = o => { const r = regelsVoor(o);
+    let b = r.starten ? r.starten.map((s, i) => i ? esc(s) : `<strong>${esc(s)}</strong>`) : startBullets(o);
+    if (r.februaristart && o.url) b = (b || []).concat([link(T("februaristartLink"), o.url.split("#")[0] + "#februaristart")]);
+    return `<section class="sectie"><h3>${esc(T("startTitel"))}</h3>${b ? `<ul class="links">${b.map(x => `<li>${x}</li>`).join("")}</ul>` : `<p class="detail">${esc(T("startOnbekend"))}</p>`}${r.extraTekst ? `<p class="extra">${esc(r.extraTekst)}</p>` : ""}</section>`; };
+  const startKort = o => { const k = startKeuze(o); return esc(k ? T(k.verlies ? "kaartMet" : "kaartZonder", { maand: k.maand }) : T("startOnbekend")); };
+  const handig = titel => sectie(titel, "", "", "", [vast("aanbod"), vast("februari"), vast("vrijstellingen")]);
+  const tipsBlok = (titel, handigTitel) => `<div class="opl-head blok"><h2>${esc(titel)}</h2>
+    ${sectie(T("tipsTitel"), esc(T("tipsTekst")), "", vastKnop("tips"), null, true)}
+    ${handig(handigTitel)}</div>`;
+  const geenAltBlok = v => `<div class="opl-head blok"><h2>${esc(T("geenAltTitel"))}</h2><div class="badges">${tag(v.naam, "#fff")}</div>
+    <p class="intro">${esc(T("geenAltTekst"))}</p>
+    ${sectie(T("geenAltTipsTitel"), esc(T("geenAltTipsTekst")), "", vastKnop("tips"), null, true)}
+    ${handig(T("geenAltHandig"))}</div>`;
+  const startQ = r => vraag(T("start"), knop(T("startNu"), { act: "startNu" + r }) + knop(T("startSept"), { act: "startSept" + r, sec: true }));
   const alternatieven = v => v.kdg.map(id => OPL[id]).filter(Boolean);
 
   // ---------- Schermen ----------
   const screens = {
-    q1: () => jaNee(TEKST.q1, "toPick", "toQ2"),
-    pick: () => zoekLijst(TEKST.pick, TEKST.pickZoek, LIJST.map(o => ({ naam: o.naam, tags: typeTag(o) })), "chooseOpl"),
+    q1: () => jaNee(T("q1"), "toPick", "toQ2"),
+    pick: () => zoekLijst(T("pick"), T("pickZoek"), LIJST.map(o => ({ naam: o.naam, tags: typeTag(o) })), "chooseOpl"),
     startA: () => startQ("A"),
     startB: () => startQ("B"),
 
-    resultA: () => { const o = state.opleiding; return blok(o, [
-      sectie(TEKST.slcTitel, o.mail ? esc(TEKST.slcTekst) : "", slcDetail(o), o.mail ? slcKnop(o) : paginaKnop(o, true), null, true),
-      startSectie(o),
-      sectie(TEKST.meerWeten, "", "", "", [paginaLink(o), vast("inschrijven"), vast("vrijstellingen")])]); },
+    resultA: () => { const o = state.opleiding, r = regelsVoor(o); return blok(o, [
+      sectie(T("slcTitel"), slcTekst(o), "", (o.mail ? slcKnop(o) : paginaKnop(o, true)) + (r.knop ? knop(r.knop.label, { href: volUrl(r.knop.url), sec: true }) : ""), null, true),
+      startSectieA(o),
+      sectie(T("meerWeten"), "", "", "", [paginaLink(o), vast("inschrijven", o), vast("vrijstellingen")].concat(r.links.map(l => link(l.label, volUrl(l.url)))))]); },
 
     resultA2: () => { const o = state.opleiding; return blok(o, [
-      sectie(TEKST.infoTitel, esc(TEKST.infoTekst), "", vastKnop("infomomenten") + paginaKnop(o), null, true),
-      sectie(TEKST.twijfel, "", "", "", [vast("tips"), vast("openLessen")]),
-      sectie(TEKST.meerWeten, "", "", "", [vast("inschrijven2728")])]); },
+      sectie(T("infoTitel"), esc(T("infoTekst")), "", vastKnop("infomomenten") + paginaKnop(o) + vastKnop("volgLes", { sec: true }), null, true),
+      sectie(T("twijfel"), "", "", "", [vast("tips")]),
+      sectie(T("meerWeten2728"), "", "", "", [vast("inschrijven2728", o)])]); },
 
-    q2: () => jaNee(TEKST.q2, "toQ3", "toThema"),
-    q3: () => jaNee(TEKST.q3, "toVoor", "toThema"),
+    q2: () => jaNee(T("q2"), "toQ3", "toThema"),
+    q3: () => jaNee(T("q3"), "toVoor", "toThema"),
 
-    thema: () => `<div class="paneel"><p class="stap">Vraag ${state.stap}</p><h2 class="kop">${esc(TEKST.thema)}</h2>` +
-      lijst(THEMA_NAMEN.map(t => ({ naam: t, tags: tag(THEMAS[t].length + " opleidingen") })), "chooseThema") +
-      knop(TEKST.themaWeetNiet, { act: "toC", breed: true }) + `</div>`,
+    thema: () => `<div class="paneel"><p class="stap">${esc(T("vraag", { nummer: state.stap }))}</p><h2 class="kop">${esc(T("thema"))}</h2>` +
+      lijst(THEMA_NAMEN.map(t => ({ naam: t, tags: tag(T("themaAantal", { aantal: THEMAS[t].length })) })), "chooseThema") +
+      knop(T("themaWeetNiet"), { act: "toC", breed: true }) + `</div>`,
 
-    themaList: () => { const t = state.thema; return `<div class="paneel"><p class="stap">Vraag ${state.stap}</p><h2 class="kop">${esc(TEKST.themaLijst)}</h2><p class="sub">${esc(TEKST.themaSub.replace("{thema}", t))}</p>` +
+    themaList: () => { const t = state.thema; return `<div class="paneel"><p class="stap">${esc(T("vraag", { nummer: state.stap }))}</p><h2 class="kop">${esc(T("themaLijst"))}</h2><p class="sub">${esc(T("themaSub", { thema: t }))}</p>` +
       lijst(THEMAS[t].map(o => ({ naam: o.naam, tags: typeTag(o) })), "chooseFromThema", true) +
-      knop(TEKST.themaTwijfel, { act: "toC", breed: true }) + `</div>`; },
+      knop(T("themaTwijfel"), { act: "toC", breed: true }) + `</div>`; },
 
-    voor: () => zoekLijst(TEKST.voor, TEKST.voorZoek, VOOR.map(v => ({ naam: v.naam, tags: tag(v.soort) })), "chooseVoor"),
+    voor: () => zoekLijst(T("voor"), T("voorZoek"), VOOR.map(v => ({ naam: v.naam, tags: tag(v.soort) })), "chooseVoor"),
 
     resultB: () => { const v = state.voor; const alts = alternatieven(v);
-      if (!alts.length) return tipsBlok(TEKST.geenAlt, tag(v.naam, "#fff"), TEKST.geenAltHandig);
+      if (!alts.length) return geenAltBlok(v);
       const sorted = alts.slice().sort((a, b) => startRang(a) - startRang(b) || a.naam.localeCompare(b.naam, "nl"));
-      return `<div class="opl-head blok"><h2>${esc(TEKST.altTitel)}</h2><div class="badges">${tag(v.naam, "#fff")}</div>
-        ${sectie(TEKST.altSlcTitel, "", "", "", [esc(TEKST.altSlc1), esc(TEKST.altSlc2)], true)}
+      return `<div class="opl-head blok"><h2>${esc(T("altTitel"))}</h2><div class="badges">${tag(v.naam, "#fff")}</div>
+        ${sectie(T("altSlcTitel"), "", "", "", [esc(T("altSlc1")), esc(T("altSlc2"))], true)}
         <div class="kaarten inblok">${sorted.map(o => kaart("mail", esc(o.naam) + " " + typeTag(o), startKort(o), slcDetail(o), slcKnop(o) + paginaKnop(o))).join("")}</div>
-        ${sectie(TEKST.aanpak, "", "", "", [vast("stappen"), vast("vrijstellingen"), vast("februari")])}</div>`; },
+        ${sectie(T("aanpak"), "", "", "", [vast("stappen"), vast("vrijstellingen"), vast("februari")])}</div>`; },
 
     resultB2: () => { const v = state.voor; const alts = alternatieven(v);
-      if (!alts.length) return tipsBlok(TEKST.geenAlt, tag(v.naam, "#fff"), TEKST.geenAltHandig);
-      return `<div class="opl-head blok"><h2>${esc(TEKST.tijdTitel)}</h2>
-      ${sectie(TEKST.tijdInfo, "", "", vastKnop("infomomenten"), null, true)}
-      <section class="sectie"><h3>${esc(TEKST.altTitel)}</h3><div class="badges">${tag(v.naam, "#fff")}</div>
+      if (!alts.length) return geenAltBlok(v);
+      return `<div class="opl-head blok"><h2>${esc(T("tijdTitel"))}</h2>
+      ${sectie(T("tijdInfo"), "", "", vastKnop("infomomenten"), null, true)}
+      <section class="sectie"><h3>${esc(T("altTitel"))}</h3><div class="badges">${tag(v.naam, "#fff")}</div>
       <div class="kaarten inblok">${alts.map(o => kaart("fysiek", esc(o.naam) + " " + typeTag(o), "", "", paginaKnop(o))).join("")}</div></section>
-      ${sectie(TEKST.aanpak, "", "", "", [vast("tips"), vast("openLessen"), vast("vrijstellingen")])}</div>`; },
+      ${sectie(T("aanpak"), "", "", "", [vast("tips"), vast("volgLes"), vast("vrijstellingen")])}</div>`; },
 
-    resultC: () => tipsBlok(TEKST.keuzeTitel, "", TEKST.keuzeHandig)
+    resultC: () => tipsBlok(T("keuzeTitel"), T("keuzeHandig"))
   };
 
   // ---------- Navigatie ----------
@@ -329,15 +321,15 @@
   };
 
   function render(scroll) {
-    const nav = (state.history.length ? `<button class="terug" data-act="back">${esc(TEKST.vorige)}</button>` : "") +
-      (state.screen !== "q1" ? `<button class="terug" data-act="restart">${esc(TEKST.opnieuw)}</button>` : "");
+    const nav = (state.history.length ? `<button class="terug" data-act="back">${esc(T("vorige"))}</button>` : "") +
+      (state.screen !== "q1" ? `<button class="terug" data-act="restart">${esc(T("opnieuw"))}</button>` : "");
     app.innerHTML = (nav ? `<div>${nav}</div>` : "") + screens[state.screen]();
     const search = document.getElementById("kdg-plek-search");
     if (search) {
       search.addEventListener("input", () => {
         const q = plat(search.value.trim()); let n = 0;
         app.querySelectorAll("#kdg-plek-list li").forEach(li => { li.hidden = !!q && !li.dataset.text.includes(q); if (!li.hidden) n++; });
-        const t = document.getElementById("kdg-plek-telling"); if (t) t.textContent = n + " opleiding" + (n === 1 ? "" : "en");
+        const t = document.getElementById("kdg-plek-telling"); if (t) t.textContent = T(n === 1 ? "aantalEen" : "aantalMeer", { aantal: n });
       });
     }
     // Na een klik het begin van de webapp in beeld houden als dat boven het scherm verdwenen is
@@ -353,8 +345,9 @@
     acts[a](b.dataset.i !== undefined ? Number(b.dataset.i) : undefined);
   });
 
-  fetch(DATA_URL, { cache: "no-cache" })
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(data => { laad(data); render(false); })
-    .catch(() => { app.innerHTML = `<p class="status">${esc(TEKST.fout)}</p>`; });
+  const haal = url => fetch(url, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  // inhoud.json is optioneel: ontbreekt het of zit er een fout in, dan gelden de ingebouwde standaardteksten.
+  Promise.all([haal(DATA_URL), haal(INHOUD_URL).catch(e => { if (window.console) console.warn("KdG late start: inhoud.json niet gelezen, standaardteksten gebruikt.", e); return null; })])
+    .then(res => { neemInhoud(res[1]); laad(res[0]); render(false); })
+    .catch(() => { app.innerHTML = `<p class="status">${esc(T("fout"))}</p>`; });
 })();
