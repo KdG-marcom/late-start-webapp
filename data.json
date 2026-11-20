@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T06:01:32.273Z",
+ "updated": "2026-11-20T06:28:56.259Z",
  "opleidingen": [
   {
    "id": "rec758eaCgPWDTmQd",
@@ -111,7 +111,11 @@
    "start": [
     "september"
    ],
-   "late": [],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
    "slc": [],
    "mail": "",
    "lijst": true
@@ -151,7 +155,11 @@
    "start": [
     "september"
    ],
-   "late": [],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
    "slc": [
     "Peggy Saey"
    ],
@@ -495,7 +503,11 @@
    "start": [
     "september"
    ],
-   "late": [],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
    "slc": [
     "Peggy Saey"
    ],
@@ -508,6 +520,31 @@
    "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/human-resources-management",
+   "themas": [
+    "Business & management",
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": false
+    }
+   ],
+   "slc": [
+    "Griet Van der Velden"
+   ],
+   "mail": "griet.vandervelden@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recGtH6Ji8wH9eIW6",
+   "naam": "Human Resources Management - Verkort",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/human-resources-management/verkort",
    "themas": [
     "Business & management",
     "Mens, gedrag & maatschappij"
@@ -670,7 +707,11 @@
    "start": [
     "september"
    ],
-   "late": [],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
    "slc": [
     "Peggy Saey"
    ],
@@ -760,6 +801,62 @@
    "lijst": true
   },
   {
+   "id": "recxGeITSqNymKbif",
+   "naam": "Leraar Kleuteronderwijs - Verkort",
+   "soort": "Educatieve bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/leraar-kleuteronderwijs-verkort-flextraject",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Belinda Wyckmans"
+   ],
+   "mail": "belinda.wyckmans@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recKnvBdvraSYh1Dd",
+   "naam": "Leraar Kleuteronderwijs - voor Kinderbegeleiders (LIO-traject)",
+   "soort": "Educatieve bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/leraar-kleuteronderwijs-lio-traject",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Kathleen Soufnanguel"
+   ],
+   "mail": "kathleen.soufnanguel@kdg.be",
+   "lijst": true
+  },
+  {
    "id": "rec0BgN1ylZo01Td8",
    "naam": "Leraar Lager Onderwijs",
    "soort": "Educatieve bachelor",
@@ -776,6 +873,30 @@
      "maand": "oktober",
      "verlies": false
     },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Belinda Wyckmans"
+   ],
+   "mail": "belinda.wyckmans@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recJBjIhsNVibzMwi",
+   "naam": "Leraar Lager Onderwijs - Verkort",
+   "soort": "Educatieve bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/leraar-lager-onderwijs-verkort-flextraject",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
     {
      "maand": "februari",
      "verlies": true
@@ -809,6 +930,25 @@
     "Siene Van Hoorick"
    ],
    "mail": "siene.vanhoorick@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec19CUhXagRqN1pQ",
+   "naam": "Leraar Secundair Onderwijs Extra Vak",
+   "soort": "Educatieve bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/leraar-secundair-onderwijs-flextraject",
+   "themas": [
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [],
+   "slc": [
+    "Maruca Fabry"
+   ],
+   "mail": "maruca.fabry@kdg.be",
    "lijst": true
   },
   {
@@ -851,7 +991,11 @@
    "start": [
     "september"
    ],
-   "late": [],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
    "slc": [
     "Fauzia Elhajouti"
    ],
@@ -963,6 +1107,31 @@
    "lijst": true
   },
   {
+   "id": "rectUxhpRuWDqGiMO",
+   "naam": "Multimedia & Creative Technologies (in English)",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/engelstalige-bachelor-multimedia-creative-technologies",
+   "themas": [
+    "Informatica",
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "november",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Sophie Verfaillie"
+   ],
+   "mail": "sophie.verfaillie@kdg.be",
+   "lijst": true
+  },
+  {
    "id": "rec1JeEaj1p3sHmz8",
    "naam": "Multimedia en Creatieve Technologie",
    "soort": "Professionele bachelor",
@@ -1064,11 +1233,63 @@
    "lijst": true
   },
   {
+   "id": "recLTGNi0oCMEAMJQ",
+   "naam": "Orthopedagogie - Verkort",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/orthopedagogie-voor-werkstudenten-en-2de-diploma",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
+   "slc": [
+    "Sofie Demeuse"
+   ],
+   "mail": "sofie.demeuse@kdg.be",
+   "lijst": true
+  },
+  {
    "id": "recijnUMoZRV5hvJC",
    "naam": "Pedagogie van het Jonge Kind",
    "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/pedagogie-van-het-jonge-kind",
+   "themas": [
+    "Mens, gedrag & maatschappij",
+    "Onderwijs"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Debby Deruyter"
+   ],
+   "mail": "debby.deruyter@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec12jAJQD8AuYz57",
+   "naam": "Pedagogie van het Jonge Kind - Verkort en voor Werkstudenten",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/pedagogie-van-het-jonge-kind-flextraject",
    "themas": [
     "Mens, gedrag & maatschappij",
     "Onderwijs"
@@ -1191,11 +1412,91 @@
    "lijst": true
   },
   {
+   "id": "recDVG6fzJP5ycftp",
+   "naam": "Rechtspraktijk - Verkort",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/bedrijfsmanagement/rechtspraktijk/rechtspraktijk-flextraject",
+   "themas": [
+    "Recht, financiën & accountancy"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Filip Aerts"
+   ],
+   "mail": "filip.aerts@kdg.be",
+   "lijst": true
+  },
+  {
    "id": "recpKemge6v1IX5Ru",
    "naam": "Sociaal Werk",
    "soort": "Professionele bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/sociaal-werk",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mieke Wouters"
+   ],
+   "mail": "mieke.wouters@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec2XsRz1USor8k0o",
+   "naam": "Sociaal Werk - Verkort",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/sociaal-werk/maatschappelijk-werk-flextraject",
+   "themas": [
+    "Mens, gedrag & maatschappij"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mieke Wouters"
+   ],
+   "mail": "mieke.wouters@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recw7M0bFBYisGOCV",
+   "naam": "Sociaal Werk - voor Werkstudenten",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/sociaal-werk/sociaal-werk-voor-werkstudenten",
    "themas": [
     "Mens, gedrag & maatschappij"
    ],
@@ -1301,6 +1602,121 @@
    "lijst": true
   },
   {
+   "id": "recxyHo6xih7T32ms",
+   "naam": "Studio Communicatie-Ontwerp",
+   "soort": "Academische bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/studio-communicatie-ontwerp",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recQR8jOSNMUAsenB",
+   "naam": "Studio Grafische Vormgeving",
+   "soort": "Academische bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/studio-grafische-vormgeving",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recLxUl5fvrGGBOUW",
+   "naam": "Studio Illustratie",
+   "soort": "Academische bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/studio-illustratie",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recgAO3vwPaZnkwAa",
+   "naam": "Studio Sieraad",
+   "soort": "Academische bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/studio-sieraad",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "reci9SR1fwWmbNu4z",
+   "naam": "Studio Vrije Kunst",
+   "soort": "Academische bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor/beeldende-kunsten/studio-kunst",
+   "themas": [
+    "Kunst, media & creatie"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
+   "slc": [
+    "Peggy Saey"
+   ],
+   "mail": "peggy.saey@kdg.be",
+   "lijst": true
+  },
+  {
    "id": "recZbKaTB5iVmHmGr",
    "naam": "Supply Chain Management",
    "soort": "Professionele bachelor",
@@ -1348,6 +1764,31 @@
     "Aurelie Van Reeth"
    ],
    "mail": "ti.slc@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "rec5X8VbEyOGjz5U4",
+   "naam": "Toegepaste Informatica - voor Werkstudenten",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/toegepaste-informatica-avondonderwijs",
+   "themas": [
+    "Informatica"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Anne-Charlotte Peeters",
+    "Aurelie Van Reeth"
+   ],
+   "mail": "tiflex.slc@kdg.be",
    "lijst": true
   },
   {
@@ -1453,7 +1894,91 @@
     "Mark Willekens"
    ],
    "mail": "mark.willekens@kdg.be",
-   "lijst": false
+   "lijst": true
+  },
+  {
+   "id": "recSbD44c32P9Kfls",
+   "naam": "Verpleegkunde - Verkort",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/verpleegkunde/verpleegkunde-verkort",
+   "themas": [
+    "Gezondheid & zorg"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mark Willekens"
+   ],
+   "mail": "mark.willekens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recSGLPS94B2BXAMT",
+   "naam": "Verpleegkunde - voor Projectstudenten",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/verpleegkunde/verpleegkunde-voor-projectstudenten",
+   "themas": [
+    "Gezondheid & zorg"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mark Willekens"
+   ],
+   "mail": "mark.willekens@kdg.be",
+   "lijst": true
+  },
+  {
+   "id": "recm9h3m3A5fP2LW8",
+   "naam": "Verpleegkunde - voor Werkstudenten",
+   "soort": "Professionele bachelor",
+   "type": "Bachelor",
+   "url": "https://www.kdg.be/opleidingen/bachelor-en-graduaatsopleidingen/verpleegkunde/verpleegkunde-voor-werkstudenten",
+   "themas": [
+    "Gezondheid & zorg"
+   ],
+   "start": [
+    "september"
+   ],
+   "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
+   "slc": [
+    "Mark Willekens"
+   ],
+   "mail": "mark.willekens@kdg.be",
+   "lijst": true
   },
   {
    "id": "recl4RtRhC3QBZmTg",
@@ -1467,7 +1992,11 @@
    "start": [
     "september"
    ],
-   "late": [],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
    "slc": [
     "Ellen Lesage"
    ],
@@ -1486,7 +2015,11 @@
    "start": [
     "september"
    ],
-   "late": [],
+   "late": [
+    {
+     "dicht": true
+    }
+   ],
    "slc": [
     "Peggy Saey"
    ],
@@ -1753,8 +2286,7 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recpzcxhfkg6gkf5p",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recqu0nqqO5WbLbdy"
    ]
   },
   {
@@ -1770,9 +2302,7 @@
    "kdg": [
     "recpKemge6v1IX5Ru",
     "recpzcxhfkg6gkf5p",
-    "recijnUMoZRV5hvJC",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recijnUMoZRV5hvJC"
    ]
   },
   {
@@ -1835,9 +2365,7 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recpzcxhfkg6gkf5p",
-    "recijnUMoZRV5hvJC",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recijnUMoZRV5hvJC"
    ]
   },
   {
@@ -1859,8 +2387,7 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recT2920lKQ9BkTVO",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recqu0nqqO5WbLbdy"
    ]
   },
   {
@@ -1880,8 +2407,7 @@
    "naam": "Bachelor in de mondzorg",
    "soort": "Professionele bachelor",
    "kdg": [
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recqu0nqqO5WbLbdy"
    ]
   },
   {
@@ -1918,9 +2444,7 @@
     "recpzcxhfkg6gkf5p",
     "recIjctpDVPPXjOZo",
     "recpKemge6v1IX5Ru",
-    "recijnUMoZRV5hvJC",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recijnUMoZRV5hvJC"
    ]
   },
   {
@@ -1974,9 +2498,7 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recpKemge6v1IX5Ru",
-    "recpzcxhfkg6gkf5p",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recpzcxhfkg6gkf5p"
    ]
   },
   {
@@ -1994,8 +2516,7 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recqu0nqqO5WbLbdy",
-    "recpKemge6v1IX5Ru",
-    "recWKACPuoy4PiCU2"
+    "recpKemge6v1IX5Ru"
    ]
   },
   {
@@ -2048,9 +2569,7 @@
     "recpzcxhfkg6gkf5p",
     "recpKemge6v1IX5Ru",
     "recbfXI6mc1WawDUT",
-    "recijnUMoZRV5hvJC",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recijnUMoZRV5hvJC"
    ]
   },
   {
@@ -2091,8 +2610,7 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recqu0nqqO5WbLbdy",
-    "recHEsf3oD2xyN5a0",
-    "recWKACPuoy4PiCU2"
+    "recHEsf3oD2xyN5a0"
    ]
   },
   {
@@ -2109,8 +2627,7 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recqu0nqqO5WbLbdy",
-    "recT2920lKQ9BkTVO",
-    "recWKACPuoy4PiCU2"
+    "recT2920lKQ9BkTVO"
    ]
   },
   {
@@ -2187,8 +2704,7 @@
    "naam": "Bachelor in het bedrijfsmanagement – afstudeerrichting rechtspraktijk",
    "soort": "Professionele bachelor",
    "kdg": [
-    "recWHgWp5bhxwOsUz",
-    "rec6JPMQNDPQMVYMP"
+    "recWHgWp5bhxwOsUz"
    ]
   },
   {
@@ -2239,9 +2755,7 @@
    "naam": "Bachelor in het human resources management",
    "soort": "Professionele bachelor",
    "kdg": [
-    "recbfXI6mc1WawDUT",
-    "rec6JPMQNDPQMVYMP",
-    "recykThbbNNBizUGH"
+    "recbfXI6mc1WawDUT"
    ]
   },
   {
@@ -2274,9 +2788,7 @@
     "recC9f3xAZoK9EOSL",
     "recZqiDnegXT78PH3",
     "recmYo7wyOmi3q2Re",
-    "rec6JPMQNDPQMVYMP",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "rec6JPMQNDPQMVYMP"
    ]
   },
   {
@@ -2653,16 +3165,6 @@
     "recmYo7wyOmi3q2Re",
     "recZqiDnegXT78PH3",
     "recbfXI6mc1WawDUT"
-   ]
-  },
-  {
-   "naam": "Bachelor of Nursing",
-   "soort": "Professionele bachelor",
-   "kdg": [
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2",
-    "recXY72kvcmkDBP1g",
-    "recT2920lKQ9BkTVO"
    ]
   },
   {
@@ -3066,8 +3568,7 @@
    "kdg": [
     "recpzcxhfkg6gkf5p",
     "recijnUMoZRV5hvJC",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recqu0nqqO5WbLbdy"
    ]
   },
   {
@@ -3123,6 +3624,8 @@
    "soort": "Academische bachelor",
    "kdg": [
     "recC9f3xAZoK9EOSL",
+    "recqu0nqqO5WbLbdy",
+    "recWKACPuoy4PiCU2",
     "recpzcxhfkg6gkf5p",
     "recZqiDnegXT78PH3",
     "recijnUMoZRV5hvJC"
@@ -3142,9 +3645,7 @@
     "recZqiDnegXT78PH3",
     "recpzcxhfkg6gkf5p",
     "recijnUMoZRV5hvJC",
-    "recbfXI6mc1WawDUT",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recbfXI6mc1WawDUT"
    ]
   },
   {
@@ -3152,9 +3653,7 @@
    "soort": "Academische bachelor",
    "kdg": [
     "recImuqf5wD9d1imD",
-    "recpzcxhfkg6gkf5p",
-    "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recpzcxhfkg6gkf5p"
    ]
   },
   {
@@ -3479,8 +3978,7 @@
     "recpzcxhfkg6gkf5p",
     "recijnUMoZRV5hvJC",
     "rec6JPMQNDPQMVYMP",
-    "recZqiDnegXT78PH3",
-    "recC9f3xAZoK9EOSL"
+    "recZqiDnegXT78PH3"
    ]
   },
   {

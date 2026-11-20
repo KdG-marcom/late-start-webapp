@@ -35,17 +35,34 @@
     "slcGeen": "Neem contact op met de opleiding via de opleidingspagina.",
     "mailOnderwerp": "Late start voor de opleiding {opleiding}: vraag via website",
     "startTitel": "Kan je nu nog starten?",
-    "startAltijd": "Starten kan altijd.",
-    "startMet": [
-      "Start je in februari? Dan neem je een aantal vakken op.",
-      "Vanaf september volg je het normale curriculum.",
-      "Je studeert samen met je toekomstige vrienden in juni af."
+    "_starten": [
+      "De tekst onder 'Kan je nu nog starten?' hangt af van het veld 'Late inschrijving mogelijk tot' in Airtable.",
+      "De eerste regel staat in het vet. {maand} wordt vervangen door de maand uit Airtable.",
+      "Staan er meerdere keuzes aangevinkt, dan geldt eerst de keuze zonder studietijdverlies, anders de laatste maand met studietijdverlies. Maanden die voorbij zijn, tellen niet meer mee."
+    ],
+    "startFebZonder": [
+      "Je kan nog starten in februari.",
+      "Je volgt dan een aangepast traject.",
+      "Je verliest geen studietijd."
     ],
     "startZonder": [
-      "Start je in februari? Dan volg je een aangepast traject.",
-      "Je verliest hier geen studietijd."
+      "Je kan nog instappen tot eind {maand}.",
+      "Je sluit aan bij de lessen van dit academiejaar.",
+      "Je verliest geen studietijd."
     ],
-    "startOnbekend": "Of je nu nog kunt instappen, bekijkt de studieloopbaancoördinator met jou.",
+    "startMet": [
+      "Je kan nog inschrijven tot eind {maand}.",
+      "Je neemt dit academiejaar al een aantal vakken op.",
+      "Vanaf september volg je het normale curriculum.",
+      "Je doet wel langer over je opleiding."
+    ],
+    "startDicht": [
+      "Inschrijven voor dit academiejaar kan niet meer.",
+      "Je kan starten in september 2027."
+    ],
+    "startOnbekend": [
+      "Of je nu nog kan instappen, bekijk je met je studiecoach."
+    ],
     "februaristartLink": "Bekijk welke vakken je vanaf februari volgt",
     "meerWeten": "Nog belangrijke informatie",
     "opleidingspagina": "Opleidingspagina",
@@ -59,8 +76,11 @@
     "altSlcTitel": "Contacteer de studieloopbaancoördinator",
     "altSlc1": "Kies hieronder de opleiding die je aanspreekt en neem contact op.",
     "altSlc2": "De studieloopbaancoördinator bekijkt met jou wanneer je kunt instappen en welke vrijstellingen je kunt krijgen.",
-    "kaartMet": "Instappen kan nog tot {maand}, met studietijdverlies. Je doet langer over de opleiding dan de normale studieduur.",
-    "kaartZonder": "Instappen kan nog tot {maand}, zonder studietijdverlies. Je studeert af binnen de normale studieduur.",
+    "kaartMet": "Inschrijven kan nog tot eind {maand}, met studietijdverlies. Je doet langer over de opleiding.",
+    "kaartFebZonder": "Starten in februari kan, zonder studietijdverlies.",
+    "kaartZonder": "Instappen kan nog tot eind {maand}, zonder studietijdverlies.",
+    "kaartDicht": "Inschrijven voor dit academiejaar kan niet meer. Je kan starten in september 2027.",
+    "kaartOnbekend": "Of je nu nog kan instappen, bekijk je met de studieloopbaancoördinator.",
     "kaartMail": "Je mailt met",
     "aanpak": "Hoe pak je het aan?",
     "tijdTitel": "Je hebt nog tijd om te vergelijken en te kiezen",
@@ -137,17 +157,15 @@
     }
   },
   "extraInLijst": {
-    "_uitleg": "Opleidingspagina's die normaal niet in de keuzelijsten staan (verkorte trajecten ...) maar er toch in moeten. Gebruik de titel exact zoals in Airtable.",
-    "opleidingen": [
-      "Verkorte Educatieve Bachelor Secundair Onderwijs"
-    ]
+    "_uitleg": "Opleidingspagina's die normaal niet in de keuzelijsten staan (bv. een bachelor-na-bachelor) maar er toch in moeten. Gebruik de titel exact zoals in Airtable. Alle bachelors en graduaten met een pagina op de Nederlandstalige site staan er vanzelf in.",
+    "opleidingen": []
   },
   "uitzonderingen": [
     {
       "_uitleg": [
         "Elke uitzondering geldt voor de opleidingen in 'opleidingen' (titel exact zoals in Airtable). Je kan er zoveel toevoegen als je wilt.",
         "Mogelijke onderdelen, allemaal optioneel:",
-        "  februaristart: true        -> extra link naar het blok #februaristart op de opleidingspagina",
+        "  februaristart: true        -> extra link in het witte blok naar het blok #februaristart op de opleidingspagina",
         "  knop: { label, url }       -> extra knop naast 'Stuur een mail'",
         "  starten: [ regel, regel ]  -> vervangt de bullets onder 'Kan je nu nog starten?' (eerste regel staat in het vet)",
         "  extraTekst: tekst          -> extra alinea onder 'Kan je nu nog starten?'",
@@ -177,12 +195,6 @@
         "label": "Infomoment start februari",
         "url": "/opleidingen/infomoment-verkorte-educatieve-bachelor-en-graduaat-secundair-onderwijs-start-februari"
       }
-    },
-    {
-      "opleidingen": [
-        "Verkorte Educatieve Bachelor Secundair Onderwijs"
-      ],
-      "februaristart": true
     }
   ]
 }

@@ -60,19 +60,31 @@ Base *Opleidingsportfolio KdG V2*. Tabellen en velden worden op ID aangesproken,
 
 Regels in `build-data.js`:
 
-- **Keuzelijsten** ("Welke opleiding wil je volgen?" en de thema's): professionele, educatieve en academische
-  bachelors en graduaten. Niet: pagina's met " - " in de titel (verkort, werkstudenten, brugprogramma …),
-  "Verkorte …", "Extra Vak", "(in English)", afstudeerstudio's ("Studio …") en pagina's die alleen een `/en/`-adres hebben.
-- **Dubbele pagina's** met dezelfde titel (bv. Nederlandse en Engelse pagina) worden één opleiding; de Nederlandse pagina wint.
+- **Alleen het aanbod van dit academiejaar**: veld `Academiejaar` moet 2026-2027 bevatten. Het jaar staat bovenaan het script (`ACADEMIEJAAR`) en moet elk jaar aangepast worden.
+- **Keuzelijsten** ("Welke opleiding wil je volgen?" en de thema's): alle professionele, educatieve en academische bachelors en
+  graduaten met een pagina op de Nederlandstalige site (`Website-taal` = nl). Engelstalige opleidingen staan er dus in met hun
+  Nederlandstalige pagina, net als verkorte trajecten, trajecten voor werkstudenten en afstudeerstudio's.
+  Andere pagina's kan je toevoegen via `extraInLijst` in `inhoud.json`.
+- **Dubbele pagina's** met dezelfde titel worden één opleiding; de pagina op de Nederlandstalige site wint.
 - **Vooropleidingen**: alle rijen, ook die met het vinkje "Na te kijken". Zonder gekoppelde KdG-opleiding
-  verwijst de webapp naar de tips voor studiekeuze.
+  toont de webapp het scherm "geen aansluitende opleiding".
 - **SLC'er**: is `SLC - E-mails` het persoonlijke adres van één van de gekoppelde SLC'ers, dan staat alleen
   die naam erbij; bij een gedeelde mailbox alle namen. Zonder mailadres verwijst de webapp naar de opleidingspagina.
 - **Namen** staan in Airtable als "Achternaam Voornaam"; het script draait ze om op basis van het mailadres.
 
-"Kan je nu nog starten?" wordt in `widget.js` berekend op de dag zelf: een late inschrijving waarvan de maand
-voorbij is, telt niet meer mee. Is er nog een optie zonder studietijdverlies, dan wordt die getoond; anders de
-laatste datum met studietijdverlies. Is er niets (meer) ingevuld, dan verwijst de tekst naar de SLC'er.
+"Kan je nu nog starten?" hangt af van `Late inschrijving mogelijk tot` en wordt in `widget.js` berekend op de dag zelf.
+Een maand telt tot en met haar laatste dag.
+
+| In Airtable | Tekst (sleutel in `inhoud.json`) |
+|---|---|
+| Februari ZONDER | `startFebZonder` |
+| Andere maand ZONDER, nog niet voorbij | `startZonder` |
+| Maand MET, nog niet voorbij | `startMet` |
+| "Niet meer mogelijk", of alle maanden voorbij | `startDicht` |
+| Leeg, of alleen een keuze met vraagteken | `startOnbekend` |
+
+Bij meerdere keuzes geldt eerst de keuze zonder studietijdverlies, anders de laatste maand met studietijdverlies.
+Keuzes met een vraagteken zijn interne notities: ze tellen niet mee en komen niet in `data.json`.
 
 ## Teksten, links en uitzonderingen aanpassen: `inhoud.json`
 
@@ -82,12 +94,12 @@ Het bestand heeft vier delen:
 
 - `teksten` — alle vragen, titels, zinnen en knopteksten. Woorden tussen accolades, zoals `{naam}` of `{opleiding}`, vult de webapp zelf in.
 - `links` — de vaste links. `url` leeg = nog geen link; een url die met `/` begint, is een pagina op kdg.be; een url die met `#` begint, is een anker op de pagina zelf (met `klasse` voor het scrollen). Met `perSoort` hangt de link af van het soort opleiding.
-- `extraInLijst` — opleidingspagina's die normaal niet in de keuzelijsten staan (verkorte trajecten …) maar er toch in moeten.
+- `extraInLijst` — opleidingspagina's die normaal niet in de keuzelijsten staan (bv. een bachelor-na-bachelor) maar er toch in moeten.
 - `uitzonderingen` — extra info voor bepaalde opleidingen. Elke uitzondering heeft een lijst `opleidingen` (titel exact zoals in Airtable) en een of meer van deze onderdelen:
 
 | Onderdeel | Effect op het scherm van die opleiding |
 |---|---|
-| `"februaristart": true` | Extra link naar het blok `#februaristart` op de opleidingspagina |
+| `"februaristart": true` | Extra link in het witte blok, naar het blok `#februaristart` op de opleidingspagina |
 | `"knop": { "label": "…", "url": "…" }` | Extra knop naast "Stuur een mail" |
 | `"starten": ["…", "…"]` | Vervangt de bullets onder "Kan je nu nog starten?" (eerste regel in het vet) |
 | `"extraTekst": "…"` | Extra alinea onder "Kan je nu nog starten?" |

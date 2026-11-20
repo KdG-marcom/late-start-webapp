@@ -12,6 +12,9 @@ const fs = require('fs');
 
 const BASE = process.env.AIRTABLE_BASE || 'appBu1JAcv2ArUIDW';
 
+// Alleen het aanbod van dit academiejaar komt in de webapp. Pas dit elk jaar aan.
+const ACADEMIEJAAR = '2026-2027';
+
 // Tabel "Opleidingsaanbod website"
 const OPL = {
   table: 'tblfUr00XRAeMSW13',
@@ -22,7 +25,9 @@ const OPL = {
   late: 'fldBkjm66w4gOn45c',         // Late inschrijving mogelijk tot
   themas: 'fldVwXFRraRUuxLkA',       // Interessegebied studiekiezers
   slc: 'fldH5ckPLlGxF3vzv',          // SLC'er (link naar _Contactpersonen)
-  mail: 'fldkKnd1sLr2JbjJ7'          // SLC - E-mails
+  mail: 'fldkKnd1sLr2JbjJ7',         // SLC - E-mails
+  aj: 'fldNeVyoNWE7FxYT4',           // Academiejaar (link naar _Academiejaren)
+  webtaal: 'fld7jfCT3Xid5k6LM'       // Website-taal (nl / en)
 };
 // Tabel "Vooropleidingen"
 const VOOR = {
@@ -35,13 +40,13 @@ const VOOR = {
 const CONTACT = { table: 'tblYOrbjkD6gOFRW6', naam: 'fld186vrjXecnb78Q', mail: 'fldbIqe44sQ9xUNEP' };
 // Tabel met de opleidingstypes
 const TYPE = { table: 'tblIRCuc7DOz6l3LN', naam: 'fldSPnaKwvKVUG9UX' };
+// Tabel "_Academiejaren"
+const AJ = { table: 'tbl0bDwPljxxeUKjx', naam: 'fldw8b9pC6XGuwUOk' };
 
 // Welke types komen in de keuzelijsten van de webapp, en met welk label
 const TYPE_LABEL = {
   'Professionele bachelor': 'Bachelor', 'Educatieve bachelor': 'Bachelor', 'Academische bachelor': 'Bachelor', 'Graduaat': 'Graduaat'
 };
-// Pagina's die niet in de keuzelijsten horen: verkorte trajecten, werkstudenten, afstudeerstudio's ...
-const NIET_IN_LIJST = / - |^Verkorte |Extra Vak|\(in English\)|^Studio /i;
 const SOORT_LABEL = {
   'Academisch gerichte bachelor': 'Academische bachelor', 'Professioneel gerichte bachelor': 'Professionele bachelor',
   'Educatieve bachelor': 'Educatieve bachelor', 'Graduaatsopleiding': 'Graduaat'
@@ -51,12 +56,12 @@ const arr = v => Array.isArray(v) ? v : (v == null ? [] : [v]);
 const naamVan = v => (v && typeof v === 'object') ? (v.name || '') : (v || '');
 const idVan = v => (v && typeof v === 'object') ? v.id : v;
 const plat = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z]/g, '');
-const isEngels = u => /\/en\//.test(u || '');
 
 // Keuzes met een vraagteken zijn interne notities ("nog na te kijken"): die gaan niet naar de website.
 const zeker = s => s && !s.includes('?');
-/** "Februari MET studietijdverlies" -> { maand: "februari", verlies: true } */
+/** "Februari MET studietijdverlies" -> { maand: "februari", verlies: true }; "Niet meer mogelijk" -> { dicht: true } */
 function leesLate(s) {
+  if (/niet meer mogelijk/i.test(s)) return { dicht: true };
   const m = /^(\S+)\s+(MET|ZONDER)\s+studietijdverlies/i.exec(s);
   return m ? { maand: m[1].toLowerCase(), verlies: m[2].toUpperCase() === 'MET' } : null;
 }
@@ -72,7 +77,8 @@ function toonNaam(naam, mail) {
 }
 
 /** Zet de ruwe Airtable-records om naar de data voor de webapp. */
-function bouw({ opl, voor, contacten, types }, extraInLijst = []) {
+function bouw({ opl, voor, contacten, types, jaren }, extraInLijst = []) {
+  const jaarNaam = {}; (jaren || []).forEach(r => jaarNaam[r.id] = r.fields[AJ.naam] || '');
   const extra = new Set(extraInLijst.map(s => String(s).trim().toLowerCase()));
   const typeNaam = {}; types.forEach(r => typeNaam[r.id] = r.fields[TYPE.naam] || '');
   const contact = {}; contacten.forEach(r => contact[r.id] = { naam: (r.fields[CONTACT.naam] || '').trim(), mail: (r.fields[CONTACT.mail] || '').trim().toLowerCase() });
@@ -91,9 +97,12 @@ function bouw({ opl, voor, contacten, types }, extraInLijst = []) {
       url: f[OPL.url] || '', themas: arr(f[OPL.themas]).map(naamVan),
       start: arr(f[OPL.start]).map(naamVan).filter(zeker).map(s => s.toLowerCase()),
       late: arr(f[OPL.late]).map(naamVan).filter(zeker).map(leesLate).filter(Boolean),
-      slc: slc.map(c => toonNaam(c.naam, c.mail)), mail
+      slc: slc.map(c => toonNaam(c.naam, c.mail)), mail,
+      // hulpvelden voor de selectie, gaan niet mee naar data.json
+      _ditJaar: arr(f[OPL.aj]).some(v => (jaarNaam[idVan(v)] || naamVan(v)) === ACADEMIEJAAR),
+      _nlSite: naamVan(f[OPL.webtaal]).toLowerCase() === 'nl'
     };
-  }).filter(p => p.naam);
+  }).filter(p => p.naam && p._ditJaar);   // alleen het aanbod van dit academiejaar
 
   // soort = volledig type (bv. Educatieve bachelor), type = label in de webapp (Bachelor of Graduaat)
   // 2) Dubbele pagina's (bv. Nederlandse en Engelse pagina) samenvoegen tot een opleiding
@@ -102,10 +111,12 @@ function bouw({ opl, voor, contacten, types }, extraInLijst = []) {
   const kanoniek = {}, opleidingen = {};
   Object.keys(groepen).forEach(k => {
     const g = groepen[k].slice().sort((a, b) =>
-      (isEngels(a.url) - isEngels(b.url)) || ((b.mail ? 1 : 0) - (a.mail ? 1 : 0)) || (a.url.length - b.url.length));
+      ((b._nlSite ? 1 : 0) - (a._nlSite ? 1 : 0)) || ((b.mail ? 1 : 0) - (a.mail ? 1 : 0)) || (a.url.length - b.url.length));
     const p = g[0];
     p.themas = [...new Set(g.flatMap(x => x.themas))];
-    p.lijst = !!TYPE_LABEL[p.soort] && !isEngels(p.url) && (!NIET_IN_LIJST.test(p.naam) || extra.has(p.naam.toLowerCase()));
+    // In de keuzelijsten: alle bachelors en graduaten met een pagina op de Nederlandstalige site
+    // (ook Engelstalige opleidingen, verkorte trajecten, trajecten voor werkstudenten en afstudeerstudio's).
+    p.lijst = (!!TYPE_LABEL[p.soort] && p._nlSite) || extra.has(p.naam.toLowerCase());
     g.forEach(x => kanoniek[x.id] = p.id);
     opleidingen[p.id] = p;
   });
@@ -122,7 +133,8 @@ function bouw({ opl, voor, contacten, types }, extraInLijst = []) {
 
   // 4) Alleen opleidingen bewaren die in een lijst staan of waar een vooropleiding naar verwijst
   const lijst = Object.values(opleidingen).filter(p => p.lijst || gebruikt.has(p.id))
-    .sort((a, b) => a.naam.localeCompare(b.naam, 'nl') || a.type.localeCompare(b.type, 'nl'));
+    .sort((a, b) => a.naam.localeCompare(b.naam, 'nl') || a.type.localeCompare(b.type, 'nl'))
+    .map(({ _ditJaar, _nlSite, ...p }) => p);
 
   return { updated: new Date().toISOString(), opleidingen: lijst, vooropleidingen };
 }
@@ -156,11 +168,11 @@ async function main() {
   const inhoud = leesInhoud();   // eerst: zo valt een fout in inhoud.json meteen op
   if (!process.env.AIRTABLE_TOKEN) { console.error('FOUT: AIRTABLE_TOKEN ontbreekt.'); process.exit(1); }
   const velden = o => Object.keys(o).filter(k => k !== 'table').map(k => o[k]);
-  const [opl, voor, contacten, types] = await Promise.all([
+  const [opl, voor, contacten, types, jaren] = await Promise.all([
     fetchAll(OPL.table, velden(OPL)), fetchAll(VOOR.table, velden(VOOR)),
-    fetchAll(CONTACT.table, velden(CONTACT)), fetchAll(TYPE.table, velden(TYPE))
+    fetchAll(CONTACT.table, velden(CONTACT)), fetchAll(TYPE.table, velden(TYPE)), fetchAll(AJ.table, velden(AJ))
   ]);
-  const out = bouw({ opl, voor, contacten, types }, (inhoud.extraInLijst || {}).opleidingen || []);
+  const out = bouw({ opl, voor, contacten, types, jaren }, (inhoud.extraInLijst || {}).opleidingen || []);
   // Veiligheid: een lege of bijna lege uitkomst wijst op een fout; dan de vorige data.json laten staan.
   if (out.opleidingen.length < 20) throw new Error(`Slechts ${out.opleidingen.length} opleidingen gevonden; data.json niet overschreven.`);
   fs.writeFileSync('data.json', JSON.stringify(out, null, 1));
