@@ -92,8 +92,8 @@
     "geenAltTipsTekst": "Misschien past een andere richting beter bij je. Met onze tips ontdek je stap voor stap welke opleiding aansluit bij je interesses, talenten en verwachtingen.",
     "geenAltHandig": "Ook handig",
     "_studiekeuze": "Scherm 'Ik weet het nog niet'",
-    "keuzeTitel": "Dan beginnen we bij je studiekeuze.",
-    "tipsTitel": "Ontdek welke opleiding bij je past.",
+    "keuzeTitel": "Dan beginnen we bij je studiekeuze",
+    "tipsTitel": "Ontdek welke opleiding bij je past",
     "tipsTekst": "Twijfel je over je studiekeuze of weet je nog niet welke richting je uit wil? Met onze tips ontdek je stap voor stap welke opleiding aansluit bij je interesses, talenten en verwachtingen.",
     "keuzeHandig": "Ook handig",
     "vorige": "← Vorige vraag",
@@ -105,7 +105,8 @@
   },
   "links": {
     "_uitleg": [
-      "url leeg = nog geen link. Een url die met / begint, is een pagina op kdg.be. Een url die met # begint, is een anker op de pagina zelf.",
+      "url leeg = nog geen link. Een url die met / begint, is een pagina op kdg.be. Een url die met # begint, is een springlink op de pagina zelf; die krijgt vanzelf de class page-scroll.",
+      "Links openen altijd in hetzelfde venster.",
       "perSoort: de link hangt af van het soort opleiding; 'standaard' geldt voor al de rest."
     ],
     "inschrijven": {
@@ -131,8 +132,7 @@
     },
     "februari": {
       "label": "Starten in februari",
-      "url": "#februaristart",
-      "klasse": "page-scroll"
+      "url": "#februaristart"
     },
     "tips": {
       "label": "Tips voor je studiekeuze",
@@ -152,8 +152,7 @@
     },
     "stappen": {
       "label": "5 stappen om te heroriënteren",
-      "url": "#5-stappen",
-      "klasse": "page-scroll"
+      "url": "#5-stappen"
     }
   },
   "extraInLijst": {

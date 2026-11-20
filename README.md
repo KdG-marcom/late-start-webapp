@@ -93,7 +93,7 @@ Open `inhoud.json` op GitHub, klik op het potlood, pas aan en klik op **Commit c
 Het bestand heeft vier delen:
 
 - `teksten` — alle vragen, titels, zinnen en knopteksten. Woorden tussen accolades, zoals `{naam}` of `{opleiding}`, vult de webapp zelf in.
-- `links` — de vaste links. `url` leeg = nog geen link; een url die met `/` begint, is een pagina op kdg.be; een url die met `#` begint, is een anker op de pagina zelf (met `klasse` voor het scrollen). Met `perSoort` hangt de link af van het soort opleiding.
+- `links` — de vaste links. `url` leeg = nog geen link; een url die met `/` begint, is een pagina op kdg.be; een url die met `#` begint, is een springlink op de pagina zelf en krijgt vanzelf de class `page-scroll`. Links openen altijd in hetzelfde venster. Met `perSoort` hangt de link af van het soort opleiding.
 - `extraInLijst` — opleidingspagina's die normaal niet in de keuzelijsten staan (bv. een bachelor-na-bachelor) maar er toch in moeten.
 - `uitzonderingen` — extra info voor bepaalde opleidingen. Elke uitzondering heeft een lijst `opleidingen` (titel exact zoals in Airtable) en een of meer van deze onderdelen:
 
