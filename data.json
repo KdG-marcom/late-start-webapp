@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T06:44:44.651Z",
+ "updated": "2026-11-23T07:44:25.164Z",
  "opleidingen": [
   {
    "id": "rec758eaCgPWDTmQd",
@@ -234,7 +234,8 @@
     }
    ],
    "slc": [
-    "Hanka Robbrecht"
+    "Birgit Neeb",
+    "Leemans Ellen"
    ],
    "mail": "om.slc@kdg.be",
    "lijst": true
@@ -283,7 +284,8 @@
     }
    ],
    "slc": [
-    "Hanka Robbrecht"
+    "Birgit Neeb",
+    "Leemans Ellen"
    ],
    "mail": "om.slc@kdg.be",
    "lijst": true
@@ -358,7 +360,8 @@
     }
    ],
    "slc": [
-    "Hanka Robbrecht"
+    "Birgit Neeb",
+    "Leemans Ellen"
    ],
    "mail": "om.slc@kdg.be",
    "lijst": true
@@ -525,12 +528,17 @@
     "Mens, gedrag & maatschappij"
    ],
    "start": [
-    "september"
+    "september",
+    "februari"
    ],
    "late": [
     {
      "maand": "februari",
      "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
     }
    ],
    "slc": [
@@ -550,12 +558,17 @@
     "Mens, gedrag & maatschappij"
    ],
    "start": [
-    "september"
+    "september",
+    "februari"
    ],
    "late": [
     {
      "maand": "februari",
      "verlies": false
+    },
+    {
+     "maand": "juni",
+     "verlies": true
     }
    ],
    "slc": [
@@ -934,7 +947,7 @@
   },
   {
    "id": "rec19CUhXagRqN1pQ",
-   "naam": "Leraar Secundair Onderwijs Extra Vak",
+   "naam": "Leraar Secundair Onderwijs - Extra vak",
    "soort": "Educatieve bachelor",
    "type": "Bachelor",
    "url": "https://www.kdg.be/leraar-secundair-onderwijs-flextraject",
@@ -1203,7 +1216,8 @@
     }
    ],
    "slc": [
-    "Hanka Robbrecht"
+    "Birgit Neeb",
+    "Leemans Ellen"
    ],
    "mail": "om.slc@kdg.be",
    "lijst": true
