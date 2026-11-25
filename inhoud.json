@@ -28,8 +28,8 @@
     "themaTwijfel": "Ik twijfel nog: help me kiezen",
     "_resultaat_opleiding": "Scherm na het kiezen van een opleiding, start zo snel mogelijk of in februari",
     "slcTitel": "Contacteer je studieloopbaancoördinator",
-    "slcEen": "Je studiecoach is {naam}.",
-    "slcMeer": "Je studiecoaches zijn {naam}.",
+    "slcEen": "Je studieloopbaancoördinator is {naam}.",
+    "slcMeer": "Je studieloopbaancoördinatoren zijn {naam}.",
     "slcTekst": "Samen bekijk je jouw persoonlijk traject, wanneer je kan starten én welke vrijstellingen je kan krijgen.",
     "slcKnop": "Stuur een mail",
     "slcGeen": "Neem contact op met de opleiding via de opleidingspagina.",
@@ -61,7 +61,7 @@
       "Je kan starten in september 2027."
     ],
     "startOnbekend": [
-      "Of je nu nog kan instappen, bekijk je met je studiecoach."
+      "Of je nu nog kan instappen, bekijk je met je studieloopbaancoördinator."
     ],
     "februaristartLink": "Bekijk welke vakken je vanaf februari volgt",
     "meerWeten": "Nog belangrijke informatie",
