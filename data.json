@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T07:44:25.164Z",
+ "updated": "2026-11-25T05:09:34.866Z",
  "opleidingen": [
   {
    "id": "rec758eaCgPWDTmQd",
@@ -229,6 +229,10 @@
    ],
    "late": [
     {
+     "maand": "oktober",
+     "verlies": false
+    },
+    {
      "maand": "februari",
      "verlies": true
     }
@@ -278,6 +282,10 @@
     "september"
    ],
    "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
     {
      "maand": "februari",
      "verlies": true
@@ -354,6 +362,10 @@
     "september"
    ],
    "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
     {
      "maand": "februari",
      "verlies": true
@@ -534,6 +546,10 @@
    "late": [
     {
      "maand": "februari",
+     "verlies": true
+    },
+    {
+     "maand": "februari",
      "verlies": false
     },
     {
@@ -562,6 +578,10 @@
     "februari"
    ],
    "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    },
     {
      "maand": "februari",
      "verlies": false
@@ -1210,6 +1230,10 @@
     "september"
    ],
    "late": [
+    {
+     "maand": "oktober",
+     "verlies": false
+    },
     {
      "maand": "februari",
      "verlies": true
@@ -2407,7 +2431,8 @@
    "kdg": [
     "recT2920lKQ9BkTVO",
     "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recWKACPuoy4PiCU2",
+    "recXY72kvcmkDBP1g"
    ]
   },
   {
@@ -3701,7 +3726,8 @@
     "recImuqf5wD9d1imD",
     "recpzcxhfkg6gkf5p",
     "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recWKACPuoy4PiCU2",
+    "recXY72kvcmkDBP1g"
    ]
   },
   {
