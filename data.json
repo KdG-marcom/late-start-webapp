@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T05:09:34.866Z",
+ "updated": "2026-11-26T12:58:57.909Z",
  "opleidingen": [
   {
    "id": "rec758eaCgPWDTmQd",
@@ -977,7 +977,12 @@
    "start": [
     "september"
    ],
-   "late": [],
+   "late": [
+    {
+     "maand": "februari",
+     "verlies": true
+    }
+   ],
    "slc": [
     "Maruca Fabry"
    ],
