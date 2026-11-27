@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T12:58:57.909Z",
+ "updated": "2026-11-27T14:08:15.859Z",
  "opleidingen": [
   {
    "id": "rec758eaCgPWDTmQd",
@@ -2195,14 +2195,16 @@
    "naam": "Bachelor in de chemie – afstudeerrichting biochemie",
    "soort": "Professionele bachelor",
    "kdg": [
-    "recBA2ode0A2142P1"
+    "recBA2ode0A2142P1",
+    "recZbKaTB5iVmHmGr"
    ]
   },
   {
    "naam": "Bachelor in de chemie – afstudeerrichting chemie",
    "soort": "Professionele bachelor",
    "kdg": [
-    "reczJFHeiT61MUXUx"
+    "reczJFHeiT61MUXUx",
+    "recZbKaTB5iVmHmGr"
    ]
   },
   {
@@ -2210,14 +2212,16 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "reczJFHeiT61MUXUx",
-    "recVBCB7HTWqw6jDF"
+    "recVBCB7HTWqw6jDF",
+    "recZbKaTB5iVmHmGr"
    ]
   },
   {
    "naam": "Bachelor in de chemie – afstudeerrichting procestechnologie",
    "soort": "Professionele bachelor",
    "kdg": [
-    "recVBCB7HTWqw6jDF"
+    "recVBCB7HTWqw6jDF",
+    "recZbKaTB5iVmHmGr"
    ]
   },
   {
@@ -2301,7 +2305,8 @@
    "kdg": [
     "rec0uqqxjbxtCv0Jn",
     "recsT7ZNv34bqwxvN",
-    "rec1JeEaj1p3sHmz8"
+    "rec1JeEaj1p3sHmz8",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -2316,7 +2321,8 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "rec0uqqxjbxtCv0Jn",
-    "recsT7ZNv34bqwxvN"
+    "recsT7ZNv34bqwxvN",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -2553,7 +2559,8 @@
     "recpKemge6v1IX5Ru",
     "recpzcxhfkg6gkf5p",
     "recqu0nqqO5WbLbdy",
-    "recWKACPuoy4PiCU2"
+    "recWKACPuoy4PiCU2",
+    "recijnUMoZRV5hvJC"
    ]
   },
   {
@@ -2590,7 +2597,8 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recRzav49h2398I0H",
-    "rec0uqqxjbxtCv0Jn"
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -2598,7 +2606,8 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recGyiDrahaZ8JSOg",
-    "rec0uqqxjbxtCv0Jn"
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -2606,7 +2615,8 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "recTNnVICTJhbPbww",
-    "rec0uqqxjbxtCv0Jn"
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -2615,7 +2625,8 @@
    "kdg": [
     "recZmdvrTJFlV8U4N",
     "rec1nW89sRa1sik1t",
-    "rec0uqqxjbxtCv0Jn"
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -2695,7 +2706,8 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "rec1JeEaj1p3sHmz8",
-    "rec0uqqxjbxtCv0Jn"
+    "rec0uqqxjbxtCv0Jn",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -2897,7 +2909,8 @@
    "soort": "Professionele bachelor",
    "kdg": [
     "rec5lFp8BZleBR6N3",
-    "rec20YAygTT2QBTwJ"
+    "rec20YAygTT2QBTwJ",
+    "recZbKaTB5iVmHmGr"
    ]
   },
   {
@@ -3324,7 +3337,8 @@
     "rec0uqqxjbxtCv0Jn",
     "rec1JeEaj1p3sHmz8",
     "recsT7ZNv34bqwxvN",
-    "recImuqf5wD9d1imD"
+    "recImuqf5wD9d1imD",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -3423,7 +3437,8 @@
     "rec0uqqxjbxtCv0Jn",
     "rec1JeEaj1p3sHmz8",
     "recsT7ZNv34bqwxvN",
-    "recImuqf5wD9d1imD"
+    "recImuqf5wD9d1imD",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -3592,7 +3607,8 @@
     "rec0uqqxjbxtCv0Jn",
     "rec1JeEaj1p3sHmz8",
     "recsT7ZNv34bqwxvN",
-    "recImuqf5wD9d1imD"
+    "recImuqf5wD9d1imD",
+    "rec126wKVHpGwSjlG"
    ]
   },
   {
@@ -3871,7 +3887,8 @@
    "kdg": [
     "rec0BgN1ylZo01Td8",
     "recblqFA3JRAckhPT",
-    "recImuqf5wD9d1imD"
+    "recImuqf5wD9d1imD",
+    "recijnUMoZRV5hvJC"
    ]
   },
   {
